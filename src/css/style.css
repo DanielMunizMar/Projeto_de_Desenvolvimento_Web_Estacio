@@ -1,0 +1,18 @@
+.navegacao{
+        background: #b81515;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+.navegacao a{
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    align-content: center;
+}
+.navegacao a:hover{
+    color: orange;
+}
