@@ -2,6 +2,10 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+#logo {
+  cursor: pointer;
+}
+
 .navegacao {
   background: #b81515;
   padding: 5px;
