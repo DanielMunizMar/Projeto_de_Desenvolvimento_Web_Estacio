@@ -1,5 +1,10 @@
+@font-face{
+    font-family: Vampire-sans;
+    src: url("../fontes_de_letra/PirataOne-Regular.ttf");
+}
+
 .navegacao{
-    background: #b81515;
+    background: #b81515;    
     padding: 5px;
     position: fixed;
     display: flex;
@@ -7,6 +12,7 @@
     left: 0;
     top: 0;
     width: 100%;
+    box-shadow: 0px 0px 15px #000000;
 }
 .navegacao a{
     color: aliceblue;
@@ -104,27 +110,46 @@ h1{
     text-align: center;
 }
 
-div{
-    background-color: white;
-    opacity: 15;
-    width: 250px;
-    text-align: center;
-    padding: 1rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    flex-direction: column;
 
-}
 
 .div-1{
+    background-color: rgba(255, 255, 255, 0.527);
     width: 88%;
     display: flex;
     align-items: center;
-    
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+.div-2{
+    align-self: baseline;
+    width: 250px;
+    text-align: justify;
+}
+
+
+div{
+
+    width: 250px;
+    display: flex;
+    align-items: center;
+
+    padding: 1rem;
+
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+
 body{
-    background-image: url(../images/PAPEL.jpg);
+    background-image: url(../images/BLOCOS.jpg);
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: cover;
     background-position: center;
+
+}
+
+.nós{
+    font-family: Vampire-sans;
 }
