@@ -3,21 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDITORA ELITE</title>
-    <link rel="stylesheet" type="text/css" href="src/css/style.css">
-    <script src="src/js/index.js" defer></script>
+    <title>Editora Elite</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/js/main.js" defer></script>
 </head>
 <body>
-    
-    <nav class="navegacao">
-        <img src="src/images/transpa.png" alt="Logo Elite" width="50px" id="logo">
-        <a href="index.html">INICIO</a>
-        <a href="src/pages/aelite.html">A ELITE</a>
-        <a href="src/pages/contato.html">CONTATO</a>
-        <a href="src/pages/trabalheconosco.html">TRABALHE CONOSCO</a>
-    </nav>
-<br><br><br>
-<h1>ESTE É NOSSO SITE</h1>
+
+    <!-- INICIO DO CABEÇALHO!!! -->
+    <header class="cabecalho-1">
+        <div class="cabecalho-2">
+            <div class="cabecalho-3">
+                <div class="cabecalho-4">
+                    <div class="cabecalho-5">
+                        <img src="src/images/ELITE.png" alt="">
+                    </div>                  
+                </div>
+                <div class="cabecalho-4">
+                    <div class="cabecalho-pesquisa">
+                        <input
+                         type="text" 
+                         class="barra-pesquisa"
+                         id="name"
+                         autocomplete="off"
+                         placeholder="Buscar">
+                        <label for="name"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="cabecalho-3">
+                <div class="cabecalho-4">
+                    <a href="index.html">INICIO</a>
+                </div>
+                <div class="cabecalho-4">
+                    <a href="src/pages/aelite.html">A ELITE</a>
+                </div>
+                <div class="cabecalho-4">
+                    <a href="src/pages/contato.html">CONTATO</a>
+                </div>
+                <div class="cabecalho-4">
+                    <a href="src/pages/trabalheconosco.html">TRABALHE CONOSCO</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- FINAL DO CABEÇALHO!!! -->
+
+    <!-- COMEÇO DO SLIDER!!! -->
+     <section class="slider">
+        <div class="slides">
+            <!-- BOTÕES DO SLIDER -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">   
+        
+            <!-- IMAGENS DO SLIDER -->
+             <div class="slide">
+                <img src="src/images/slider/a.png">
+             </div>
+             <div class="slide">
+                <img src="src/images/slider/b.png">
+             </div>
+             <div class="slide">
+                <img src="src/images/slider/c.png">
+             </div>
+             <div class="slide">
+                <img src="src/images/slider/d.png">
+             </div>
+             <div class="slide">
+                <img src="src/images/slider/e.png">
+             </div>
+             <!-- FIM DAS IMAGENS DO SLIDER -->
+        
+             <!-- BOTÕES DE NAVEGAÇÃO SLIDER -->
+              <div class="slider-autonav">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+
+              </div>
+
+              <div class="slider-manunav">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+              </div>
+
+        </div>
+
+     </section>
 
 </body>
 </html>
