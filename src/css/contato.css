@@ -1,27 +1,114 @@
-.navegacao{
-    background: #b81515;    
-    padding: 5px;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    left: 0;
-    top: 0;
-    width: 100%;
-    box-shadow: 0px 0px 15px #000000;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
-.navegacao a{
-    color: aliceblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none;
-    margin: auto;
-}
-#logo{
-    cursor: pointer;
+/*PALETA DE CORES DO SITE*/
+:root{
+    --VermelhoBase: #b81515;
+    --Branco: #FFFFFF;
+    --VermelhoEscuro: #630505;
+    --Preto: #121212;
+    --Cinza: rgba(255, 255, 255, 0.5);
+    --Ciano: #00ffff;
 }
 
-.navegacao a:hover{
-    color: orange;
+/* CABEÇALHO DO SITE*/
+.cabecalho-back{
+    background-color: var(--VermelhoBase);
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.cabecalho-back-2{
+    height: 80px;
+    width: 100%;
+    margin: 1.5em 1.5em;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: cen;
+}
+
+    /* IMAGEM CABEÇALHO*/
+    .cabecalho-img{
+        width: 20%;
+        text-align: center;
+    }
+
+    .cabecalho-img img{
+        width: 10rem;
+}
+    /* IMAGEM CABEÇALHO*/
+
+
+    /* NAVEGAÇÃO */
+    .cabecalho-nav{
+        width: 55%;
+    }
+
+    .cabecalho-naveg{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2em;
+        
+    }
+
+    .cabecalho-nav a{
+        text-decoration: none;
+        color: var(--Branco);
+        font-size: 1.35rem;
+        transition: 0.5s;
+    }
+
+    .cabecalho-nav a:hover{
+        color: var(--Ciano);
+    }
+     /* NAVEGAÇÃO */
+
+
+    /* BARRA DE PESQUISA */
+    .cabecalho-pesquisa{
+        margin-top: 1.5rem;
+        width: 25%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .barra-pesquisa{
+        height: 30px;
+        width: 15em;
+        border: 2px solid var(--Branco);
+        border-radius: 20px;
+        outline: none;
+        background-color: var(--VermelhoEscuro);
+        color: var(--Branco);
+        padding-left: 1em;
+        transition: 0.25s;
+    }
+
+    .cabecalho-pesquisa label{
+        position: absolute;
+        background: var(--VermelhoEscuro);
+        border-radius: 10px;
+        color: var(--Branco);
+        left: 1em;
+        top: 0.45em;
+        cursor: text;    
+    }
+
+    .barra-pesquisa:hover{
+        border: 2px solid var(--Cinza);
+    }
+
+    .barra-pesquisa:focus{
+        border: 2px solid var(--Ciano)
+    }
+    /* BARRA DE PESQUISA */
+
+
+/* FIM DO CABEÇALHO DO SITE*/
 
 /* Estilização da página contato.html*/
 
