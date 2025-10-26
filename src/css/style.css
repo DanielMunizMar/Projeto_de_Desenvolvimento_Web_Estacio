@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 :root{
@@ -50,6 +50,8 @@
     font-size: 20px;
     margin-top: -15px;
     transition: 0.5s;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 .cabecalho-4 a:hover{
