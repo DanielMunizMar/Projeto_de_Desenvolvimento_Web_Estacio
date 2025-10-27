@@ -4,6 +4,12 @@
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+/*Transforma a Logo em um objeto clicável, serve de atalho para a home*/
+#logo{
+    cursor: pointer;
+}
+
+
 /*PALETA DE CORES DO SITE*/
 :root{
     --VermelhoBase: #b81515;

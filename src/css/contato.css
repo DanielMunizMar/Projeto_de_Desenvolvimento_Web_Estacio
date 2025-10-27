@@ -13,6 +13,11 @@
     --Ciano: #00ffff;
 }
 
+/*Transforma a Logo em um objeto clicável, serve de atalho para a home*/
+#logo{
+    cursor: pointer;
+}
+
 /* CABEÇALHO DO SITE*/
 .cabecalho-back{
     background-color: var(--VermelhoBase);

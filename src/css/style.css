@@ -183,3 +183,42 @@
     }
 
 /* BOTÕES AUTOMATICOS DO SLIDER*/
+.slider-autonav{
+    position: absolute;
+    width: 800px;
+    margin-top: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-autonav div{
+    border: 2px solid var(--Ciano);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.slider-autonav div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .slider-autonav .auto-btn1{
+    background-color: var(--Branco);
+}
+
+#radio2:checked ~ .slider-autonav .auto-btn2{
+    background-color: var(--Branco);
+}
+
+#radio3:checked ~ .slider-autonav .auto-btn3{
+    background-color: var(--Branco);
+}
+
+#radio4:checked ~ .slider-autonav .auto-btn4{
+    background-color: var(--Branco);
+}
+
+#radio5:checked ~ .slider-autonav .auto-btn5{
+    background-color: var(--Branco);
+}
