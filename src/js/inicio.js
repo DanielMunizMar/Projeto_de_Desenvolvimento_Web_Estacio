@@ -1,3 +1,4 @@
+// FUNÇÃO CRIADA PARA O FUNCIONAMENTO DO SLIDER
 let count = 1;
 document.getElementById("radio1").checked = true;
 
@@ -13,3 +14,4 @@ function nextImage(){
 
     document.getElementById("radio"+count).checked = true;
 }
+// FIM DA FUNÇÃO CRIADA PARA O FUNCIONAMENTO DO SLIDER
