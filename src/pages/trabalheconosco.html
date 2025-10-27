@@ -8,38 +8,38 @@
     <script src="../js/index.js" defer></script>
   </head>
   <body>
- 
-        <!-- INICIO DO CABEÇALHO!!! -->
-    
-    <header class="cabecalho-back">
-        <div class="cabecalho-back-2">
-            <div class="cabecalho-img">
-                <img src="../images/ELITE.png" alt="" id="logo">
-            </div>
-            
-            <div class="cabecalho-nav">
-                <nav class="cabecalho-naveg">
-                    <a href="../../index.html">INICIO</a>
-                    <a href="aelite.html">A ELITE</a>
-                    <a href="contato.html">CONTATO</a>
-                    <a href="trabalheconosco.html">TRABALHE CONOSCO</a>
-                </nav>
-            </div>
+    <!-- INICIO DO CABEÇALHO!!! -->
 
-            <div class="cabecalho-pesquisa">
-                <input
-                    type="text" 
-                    class="barra-pesquisa"
-                    id="name"
-                    autocomplete="off"
-                    placeholder="Buscar">
-                <label for="name"></label>
-            </div>
+    <header class="cabecalho-back">
+      <div class="cabecalho-back-2">
+        <div class="cabecalho-img">
+          <img src="../images/ELITE.png" alt="" id="logo" />
         </div>
+
+        <div class="cabecalho-nav">
+          <nav class="cabecalho-naveg">
+            <a href="../../index.html">INICIO</a>
+            <a href="aelite.html">A ELITE</a>
+            <a href="contato.html">CONTATO</a>
+            <a href="trabalheconosco.html">TRABALHE CONOSCO</a>
+          </nav>
+        </div>
+
+        <div class="cabecalho-pesquisa">
+          <input
+            type="text"
+            class="barra-pesquisa"
+            id="name"
+            autocomplete="off"
+            placeholder="Buscar"
+          />
+          <label for="name"></label>
+        </div>
+      </div>
     </header>
 
     <!-- FINAL DO CABEÇALHO!!! -->
-    
+
     <section>
       <h1>TRABALHE CONOSCO</h1>
       <div class="container-pesquisa">
@@ -47,42 +47,96 @@
         <button id="btnPesquisa">Pesquisar</button>
       </div>
       <div class="vagas-cards">
-        
         <div class="vaga-descricao">
-          <img src="../images/devbackend.jpg" alt="Imagem da vaga de Desenvolvedor Back-End" />
+          <img
+            src="../images/devbackend.jpg"
+            alt="Imagem da vaga de Desenvolvedor Back-End"
+          />
           <h4>Desenvolvedor Back-End</h4>
-          <button type="button" id="btnDescricao">Ver descrição</button>
+          <button
+            type="button"
+            id="btnDescricao"
+            data-titulo="Desenvolvedor Back-End"
+            data-descricao="Buscamos um profissional com experiência em PHP e MySQL para manutenção e desenvolvimento de APIs internas. Experiência com Laravel ou Symfony é um diferencial. Trabalho em regime remoto ou híbrido."
+          >
+            Ver descrição
+          </button>
         </div>
 
         <div class="vaga-descricao">
-          <img src="../images/atendentedesac.jpg" alt="Imagem da vaga de Atendente SAC" />
+          <img
+            src="../images/atendentedesac.jpg"
+            alt="Imagem da vaga de Atendente SAC"
+          />
           <h4>Atendente SAC</h4>
-          <button type="button" id="btnDescricao">Ver descrição</button>
-
+          <button
+            type="button"
+            id="btnDescricao"
+            data-titulo="Atendente SAC"
+            data-descricao="Responsável pelo atendimento ao cliente via canais digitais (e-mail e chat). É essencial ter excelente comunicação, paciência e foco na resolução de problemas."
+          >
+            Ver descrição
+          </button>
         </div>
         <div class="vaga-descricao">
-          <img src="../images/editordetexto.jpg" alt="Imagem da vaga de Editor de Texto" />
+          <img
+            src="../images/editordetexto.jpg"
+            alt="Imagem da vaga de Editor de Texto"
+          />
           <h4>Editor(a) de Texto</h4>
-          <button type="button" id="btnDescricao">Ver descrição</button>
-
+          <button
+            type="button"
+            id="btnDescricao"
+            data-titulo="Editor(a) de Texto"
+            data-descricao="Revisão e padronização de manuscritos, garantindo a qualidade ortográfica e gramatical. Necessário conhecimento aprofundado nas normas da ABNT e vasta experiência editorial."
+          >
+            Ver descrição
+          </button>
         </div>
         <div class="vaga-descricao">
-          <img src="../images/especialistaebooks.jpg" alt="Imagem da vaga de Especialista em E-books" />
+          <img
+            src="../images/especialistaebooks.jpg"
+            alt="Imagem da vaga de Especialista em E-books"
+          />
           <h4>Especialista em E-books (EPUB, MOBI, PDF interativo)</h4>
-          <button type="button" id="btnDescricao">Ver descrição</button>
-
+          <button
+            type="button"
+            id="btnDescricao"
+            data-titulo="Especialista em E-books (EPUB, MOBI, PDF interativo)"
+            data-descricao="Atuar na conversão e formatação de livros para diversos formatos digitais (EPUB, MOBI). Exige domínio de HTML, CSS e ferramentas de formatação especializadas."
+          >
+            Ver descrição
+          </button>
         </div>
         <div class="vaga-descricao">
-          <img src="../images/gerentedeprojetos.png" alt="Imagem da vaga de Gerente de Projetos" />
+          <img
+            src="../images/gerentedeprojetos.png"
+            alt="Imagem da vaga de Gerente de Projetos"
+          />
           <h4>Gerente de Projetos</h4>
-          <button type="button" id="btnDescricao">Ver descrição</button>
-
+          <button
+            type="button"
+            id="btnDescricao"
+            data-titulo="Gerente de Projetos"
+            data-descricao="Liderança e planejamento do ciclo de vida dos projetos editoriais. Experiência com metodologias ágeis (Scrum/Kanban) e gestão de stakeholders."
+          >
+            Ver descrição
+          </button>
         </div>
         <div class="vaga-descricao">
-          <img src="../images/ilustrador.jpeg" alt="Imagem da vaga de Ilustrador" />
+          <img
+            src="../images/ilustrador.jpeg"
+            alt="Imagem da vaga de Ilustrador"
+          />
           <h4>Ilustrador(a)</h4>
-          <button type="button" id="btnDescricao">Ver descrição</button>
-
+          <button
+            type="button"
+            id="btnDescricao"
+            data-titulo="Ilustrador(a)"
+            data-descricao="Criação de artes para capas, diagramação interna e materiais promocionais. Portfólio é indispensável. Domínio do Pacote Adobe (Illustrator, Photoshop)."
+          >
+            Ver descrição
+          </button>
         </div>
       </div>
     </section>

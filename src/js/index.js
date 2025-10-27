@@ -22,5 +22,6 @@ document.getElementById("btnPesquisa").addEventListener("click", () => {
 // Quando clicar no "Ver descrição" de uma vaga, exibirá uma página com a descrição completa da vaga.
 
 document.getElementById("btnDescricao").addEventListener("click", () => {
-    window.location.href = "descricao-vaga.html";
+  window.location.href = "../php/descricao-vaga.php";
 });
+
