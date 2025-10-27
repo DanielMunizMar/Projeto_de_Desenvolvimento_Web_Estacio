@@ -100,52 +100,86 @@
 
 /*ESTILIZAÇÃO DO SLIDER*/
 
-.slider{
-    margin: 0 auto;
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
-}
+    .slider{
+        margin: 0 auto;
+        width: 800px;
+        height: 400px;
+        overflow: hidden;
+    }
 
-.slides{
-    width: 400%;
-    height: 400px;
-    display: flex;
-}
+    .slides{
+        width: 400%;
+        height: 400px;
+        display: flex;
+    }
 
-.slides input{
-    display: none;
-}
+    .slides input{
+        display: none;
+    }
 
-.slide{
-    width: 25%;
-    position: relative;
-}
+    /* IMAGENS DO SLIDER*/
+    .slide-pri{
+        width: 25%;
+        position: relative;
+    }
 
-.slide img{
-    width: 800px;
-}
+    .slide-pri img{
+        width: 800px;
+    }
 
-.slider-manunav{
-    position: absolute;
-    width: 800px;
-    margin-top: 170px;
-    display: flex;
-    justify-content: center;
-}
+    .slide{
+        width: 25%;
+        position: relative;
+    }
 
-.manual-btn{
-    border: 2px solid var(--Branco);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
-}
+    .slide img{
+        width: 800px;
+    }
 
-.manual-btn:not(:last-child){
-    margin-right: 40px  ;
-}
 
-.manual-btn:hover{
-    background-color: var(--Branco);
-}
+    /* BOTÕES MANUAIS DO SLIDER*/
+    .slider-manunav{
+        position: absolute;
+        width: 800px;
+        margin-top: 170px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .manual-btn{
+        border: 2px solid var(--Branco);
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .manual-btn:not(:last-child){
+        margin-right: 40px  ;
+    }
+
+    .manual-btn:hover{
+        background-color: var(--Branco);
+    }
+
+    #radio1:checked ~ .slide-pri{
+        margin-left: 0;
+    }
+
+    #radio2:checked ~ .slide-pri{
+        margin-left: -25%;
+    }
+
+    #radio3:checked ~ .slide-pri{
+        margin-left: -50%;
+    }
+
+    #radio4:checked ~ .slide-pri{
+        margin-left: -75%;
+    }
+
+    #radio5:checked ~ .slide-pri{
+        margin-left: -100%;
+    }
+
+/* BOTÕES AUTOMATICOS DO SLIDER*/
