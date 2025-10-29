@@ -4,22 +4,6 @@ document.getElementById("logo").addEventListener("click", () => {
   window.location.href = "../../index.html";
 });
 
-// Quando colocar o começo das palavras que tem no título da vaga, o sistema filtra e mostra apenas as vagas que contém aquelas palavras.
-document.getElementById("btnPesquisa").addEventListener("click", () => {
-  const palavraPesquisa = document
-    .getElementById("pesquisa")
-    .value.toLowerCase();
-
-  items.forEach((vagaDescricao) => {
-    const title = vagaDescricao.querySelector("h4").textContent.toLowerCase();
-    if (title.includes(palavraPesquisa)) {
-      vagaDescricao.style.display = "block";
-    } else {
-      vagaDescricao.style.display = "none";
-    }
-  });
-});
-
 // Quando clicar no "Ver descrição" de uma vaga, exibirá uma página com a descrição completa da vaga.
 
 const vagas = {
