@@ -9,7 +9,6 @@ document.getElementById("btnPesquisa").addEventListener("click", () => {
   const palavraPesquisa = document
     .getElementById("pesquisa")
     .value.toLowerCase();
-  const vagaDescricao = document.querySelectorAll(".vaga-descricao");
 
   items.forEach((vagaDescricao) => {
     const title = vagaDescricao.querySelector("h4").textContent.toLowerCase();
@@ -22,6 +21,7 @@ document.getElementById("btnPesquisa").addEventListener("click", () => {
 });
 
 // Quando clicar no "Ver descrição" de uma vaga, exibirá uma página com a descrição completa da vaga.
+
 const vagas = {
   devbackend: {
     titulo: "Desenvolvedor Back-End",
@@ -60,19 +60,38 @@ const vagas = {
   },
 };
 
-document.getElementById("btnDescricao").addEventListener("click", () => {
-  const vagaId = document
-    .getElementById("btnDescricao")
-    .getAttribute("data-vaga");
+const detalheVaga = document.getElementById("detalhesDaVaga");
+const containerVaga = document.getElementById("containerVaga");
+const botoesDescricao = document.querySelectorAll(".btn-descricao");
 
+function mostrarDetalhesDaVaga(vagaId) {
   const vaga = vagas[vagaId];
-  const detalhesDaVaga = document.getElementById("detalhesDaVaga");
-
   if (vaga) {
-    detalhesDaVaga.innerHTML = `
-      <h2>${vaga.titulo}</h2>
-      <p>${vaga.descricao}</p>
-      <button id="btnCandidatar">Candidatar-se</button>
-    `;
+    detalheVaga.innerHTML = `
+    <h2>${vaga.titulo}</h2><br>
+    <p>${vaga.descricao}</p>
+    <button>Candidatar-se</button>
+  `;
+  } else {
+    alert("Vaga não encontrada.");
   }
+}
+
+function fecharDetalhesDaVaga() {
+  containerVaga.style.display = "none";
+  detalheVaga.innerHTML = "";
+}
+
+botoesDescricao.forEach((botao) => {
+  botao.addEventListener("click", () => {
+    containerVaga.style.display = "flex";
+    const vagaId = botao.getAttribute("data-vaga");
+    mostrarDetalhesDaVaga(vagaId);
+  });
+});
+
+containerVaga.addEventListener("click", (e) => {
+  if (e.target.id === "containerVaga") {
+    fecharDetalhesDaVaga();
+  } 
 });
