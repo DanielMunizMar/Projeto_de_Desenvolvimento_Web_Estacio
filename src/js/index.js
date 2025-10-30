@@ -51,19 +51,19 @@ const botoesDescricao = document.querySelectorAll(".btn-descricao");
 function mostrarDetalhesDaVaga(vagaId) {
   const vaga = vagas[vagaId];
   if (vaga) {
+    containerVaga.style.display = "block";
     detalheVaga.innerHTML = `
     <h2>${vaga.titulo}</h2><br>
     <p>${vaga.descricao}</p>
-    <button>Candidatar-se</button>
+    <button class="btn-candidatar">Candidatar-se</button>
   `;
   } else {
-    alert("Vaga não encontrada.");
+    detalheVaga.innerHTML = "<p>Vaga não encontrada.</p>";
   }
 }
 
 function fecharDetalhesDaVaga() {
   containerVaga.style.display = "none";
-  detalheVaga.innerHTML = "";
 }
 
 botoesDescricao.forEach((botao) => {
@@ -72,10 +72,4 @@ botoesDescricao.forEach((botao) => {
     const vagaId = botao.getAttribute("data-vaga");
     mostrarDetalhesDaVaga(vagaId);
   });
-});
-
-containerVaga.addEventListener("click", (e) => {
-  if (e.target.id === "containerVaga") {
-    fecharDetalhesDaVaga();
-  } 
 });

@@ -182,7 +182,7 @@ h1 {
 
 .vaga-descricao:hover {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
-  transition: transform 4s ease;
+  transition: transform 5s ease-in-out;
 }
 
 .vaga-descricao img {
@@ -215,14 +215,11 @@ h1 {
 
 /* DETALHES DA VAGA */
 #containerVaga {
-  position: fixed;
-  z-index: 1000;
-  top: 30%;
-  left: 30%;
+  
+  margin: 25px;
   font-size: 22px;
   width: 50%;
   border-radius: 10px;
-  height: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   background-color: rgba(207, 188, 182);
 }
@@ -234,4 +231,19 @@ h1 {
   margin: 35px 25px;
   width: 90%;
   position: relative;
+}
+
+.btn-candidatar {
+  padding: 10px 15px;
+  font-size: 17px;
+  background-color: #b81515;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.btn-candidatar:hover {
+  background-color: #c26106;
 }
