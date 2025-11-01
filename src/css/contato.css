@@ -79,12 +79,12 @@ ul{
     }
 
     &:hover{
-                background-color: var(--SombraCinza);
+        background-color: var(--SombraCinza);
 
-                a{
-                    color: var(--Branco);
-                }
-            }
+        a{
+            color: var(--Branco);
+        }
+    }
 }
 
 .mobile-menu-icon{

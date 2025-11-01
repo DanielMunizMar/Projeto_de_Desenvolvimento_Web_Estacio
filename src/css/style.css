@@ -14,3 +14,126 @@
     --Ciano: #00ffff;
     --SombraCinza: #464646;
 }
+
+/* INÍCIO DO HEADER*/
+header{
+    background-color: var(--VermelhoBase);
+    height: auto;
+    box-shadow: 0 3px 10px var(--SombraCinza);
+}
+
+.div-logo{
+    text-align: center;
+}
+
+.elite-logo{
+    width: 18rem;
+    padding: 1.5rem 0;
+}
+
+.nav-bar{
+    display: flex;
+    padding: 1rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-bar-links{
+        width: 80%;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 2.5rem;
+        justify-content: space-between;
+
+        a{
+            text-decoration: none;
+            font-size: 1.3rem;
+            color: var(--Branco);
+            transition: 0.5s;
+            
+            &:hover{
+            color: var(--Ciano);
+            }
+        }
+    }
+
+    .entrar-btn button{
+        border: none;
+    background-color: var(--Branco);
+    padding: 0.625rem 0.938rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+    a{
+        text-decoration: none;
+        color: var(--VermelhoBase);
+        font-size: 1.1rem;
+    }
+
+    &:hover{
+        background-color: var(--SombraCinza);
+
+        a{
+            color: var(--Branco);
+        }
+    }
+    }
+}
+
+.mobile-btn{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+@media screen and (max-width: 770px){
+    .nav-bar-links{
+        display: none;
+    }
+
+    .mobile-btn{
+        display: block;
+
+        button{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    .mobile-menu{
+        ul{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: 1rem;
+
+            li{
+                padding-top: 1.2rem;
+            }
+
+            a{
+                font-size: 1.3rem;
+                color: var(--Branco);
+                text-decoration: none;
+                transition: 0.5s;
+
+                &:hover{
+                    color: var(--Ciano);
+                }
+            }
+        }
+    }
+
+    .open{
+        display: block;
+        position: relative;
+        z-index: 10;
+    }
+    /*FIM DO MENU RESPONSIVO*/
+}
