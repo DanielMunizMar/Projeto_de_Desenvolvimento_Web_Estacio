@@ -9,35 +9,38 @@
 </head>
 <body>
 
-    <!-- INICIO DO CABEÇALHO!!! -->
-    
+<!-- INICIO DO CABEÇALHO!!! -->
     <header class="cabecalho-back">
-        <div class="cabecalho-back-2">
-            <div class="cabecalho-img">
-                <img src="../images/ELITE.png" alt="" id="logo">
+        <nav class="nav-bar">
+            <div class="logo-icon">
+                <img id="logo" src="../images/ELITE.png" alt="">
             </div>
-            
-            <div class="cabecalho-nav">
-                <nav class="cabecalho-naveg">
-                    <a href="../../index.html">INICIO</a>
-                    <a href="aelite.html">A ELITE</a>
-                    <a href="contato.html">CONTATO</a>
-                    <a href="trabalheconosco.html">TRABALHE CONOSCO</a>
-                </nav>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">INÍCIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aelite.html">A ELITE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">CONTATOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trabalheconosco.html">TRABALHE CONOSCO</a></li>
+                </ul>         
             </div>
-
-            <div class="cabecalho-pesquisa">
-                <input
-                    type="text" 
-                    class="barra-pesquisa"
-                    id="name"
-                    autocomplete="off"
-                    placeholder="Buscar">
-                <label for="name"></label>
+            <div class="nav-button">
+                <button class="login-button"><a href="#">Entrar</a></button>
             </div>
-        </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../images/icons/aberto.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="../../index.html">INÍCIO</a></li>
+                <li class="nav-item"><a class="nav-link" href="aelite.html">A ELITE</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">CONTATOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="trabalheconosco.html">TRABALHE CONOSCO</a></li>
+            </ul>
+            <div class="login-button-2">
+                <button><a href="#">Entrar</a></button>
+            </div>
     </header>
-
     <!-- FINAL DO CABEÇALHO!!! -->
 
 <h2>SOBRE NÓS</h2>
