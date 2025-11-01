@@ -10,109 +10,173 @@
 }
 
 /*PALETA DE CORES DO SITE*/
-:root {
-  --VermelhoBase: #b81515;
-  --Branco: #ffffff;
-  --VermelhoEscuro: #630505;
-  --Preto: #121212;
-  --Cinza: rgba(255, 255, 255, 0.5);
-  --Ciano: #00ffff;
+:root{
+    --VermelhoBase: #b81515;
+    --VermelhoClaro: #db6161;
+    --Branco: #FFFFFF;
+    --VermelhoEscuro: #630505;
+    --Preto: #121212;
+    --Cinza: rgba(255, 255, 255, 0.5);
+    --Ciano: #00ffff;
+    --SombraCinza: #464646;
 }
 
-/* CABEÇALHO DO SITE*/
-.cabecalho-back {
-  background-color: var(--VermelhoBase);
-  height: 120px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+/* HEADER DO SITE*/
+header{
+    background-color: var(--VermelhoBase);
+    height: 7.5rem;
+    box-shadow: 0 3px 10px var(--SombraCinza);
 }
 
-.cabecalho-back-2 {
-  height: 80px;
-  width: 100%;
-  margin: 1.5em 1.5em;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: cen;
+.nav-bar{
+    display: flex;
+    padding: 1.5rem 3rem;
+    justify-content: space-between;
 }
 
-/* IMAGEM CABEÇALHO*/
-.cabecalho-img {
-  width: 20%;
-  text-align: center;
+.logo-icon{
+    display: flex;
+    align-items: center;
+
+    #logo{
+        width: 10rem;
+    }
 }
 
-.cabecalho-img img {
-  width: 10rem;
-}
-/* IMAGEM CABEÇALHO*/
-
-/* NAVEGAÇÃO */
-.cabecalho-nav {
-  width: 55%;
+.nav-list{
+    display: flex;
+    align-items: center;
 }
 
-.cabecalho-naveg {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2em;
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    .nav-link{
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--Branco);
+        transition: 0.5s;
+
+        &:hover{
+          color: var(--Ciano);
+        }
+    }
 }
 
-.cabecalho-nav a {
-  text-decoration: none;
-  color: var(--Branco);
-  font-size: 1.35rem;
-  transition: 0.5s;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
+.nav-button{
+    align-content: center;
 }
 
-.cabecalho-nav a:hover {
-  color: var(--Ciano);
-}
-/* NAVEGAÇÃO */
+.login-button{
+    border: none;
+    background-color: var(--Branco);
+    padding: 0.625rem 0.938rem;
+    border-radius: 5px;
+    transition: 0.5s;
 
-/* BARRA DE PESQUISA */
-.cabecalho-pesquisa {
-  margin-top: 1.5rem;
-  width: 25%;
-  display: flex;
-  justify-content: center;
-}
+    a{
+        text-decoration: none;
+        color: var(--VermelhoBase);
+        font-size: 1.1rem;
+    }
 
-.barra-pesquisa {
-  height: 30px;
-  width: 15em;
-  border: 2px solid var(--Branco);
-  border-radius: 20px;
-  outline: none;
-  background-color: var(--VermelhoEscuro);
-  color: var(--Branco);
-  padding-left: 1em;
-  transition: 0.25s;
+    &:hover{
+                background-color: var(--SombraCinza);
+
+                a{
+                    color: var(--Branco);
+                }
+            }
 }
 
-.cabecalho-pesquisa label {
-  position: absolute;
-  background: var(--VermelhoEscuro);
-  border-radius: 10px;
-  color: var(--Branco);
-  left: 1em;
-  top: 0.45em;
-  cursor: text;
+.mobile-menu-icon{
+    display: none;
+    align-content: center;
+
+    button{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            
+        }
 }
 
-.barra-pesquisa:hover {
-  border: 2px solid var(--Cinza);
+.mobile-menu{
+    display: none;
+    background-color:  var(--VermelhoBase);
+    box-shadow: 0 3px 5px var(--SombraCinza);
 }
 
-.barra-pesquisa:focus {
-  border: 2px solid var(--Ciano);
+/*MENU RESPONSIVO*/
+@media screen and (max-width: 870px){
+   .nav-bar{
+        padding: 1.5rem 3rem;
+   }
+
+       .nav-item{
+        display: none;
+    }
+
+    .login-button{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{ 
+        display: block;
+        padding-top: 1,2rem;
+    }
+
+    .mobile-menu .login-button-2{
+        display: block;
+        padding: 1rem 2rem;
+        border: none;
+    
+        button{
+            width: 100%;
+            height: 2rem;
+            border: none;
+            border-radius: 10px;
+            transition: 0.5s;
+
+            a{
+                text-decoration: none;
+                color: var(--VermelhoBase);
+                font-size: 1.2rem;
+            }
+            
+            &:hover{
+                background-color: var(--SombraCinza);
+
+                a{
+                    color: var(--Branco);
+                }
+            }
+        }
+    }
+
+    .open{
+        display: block;
+        position: relative;
+        z-index: 10;
+    }
+    /*FIM DO MENU RESPONSIVO*/
 }
-/* BARRA DE PESQUISA */
+/*FIM DO HEADER DO SITE*/
 
 /* CABEÇALHO DE TRABALHE CONOSCO */
 h1 {
