@@ -182,6 +182,7 @@ ul{
 h1 {
   text-align: center;
   margin-top: 80px;
+  margin-bottom: 15px;
 }
 
 /* CONTAINER DE PESQUISA */
@@ -277,9 +278,9 @@ h1 {
   background-color: #c26106;
 }
 
-/* DETALHES DA VAGA */
+/* BLOCO DE DETALHES DA VAGA */
 #containerVaga {
-  
+  display: none;
   margin: 25px;
   font-size: 22px;
   width: 50%;
@@ -310,4 +311,30 @@ h1 {
 
 .btn-candidatar:hover {
   background-color: #c26106;
+}
+
+/* RESPONSIVIDADE DO PAINEL DE VAGAS */
+@media screen and (max-width: 870px) {
+  .container-pesquisa {
+    margin: 25px;
+  }
+
+  .vaga-descricao {
+    padding: 1rem;
+    width: 38%;
+    height: 20%;
+  
+    & h4 {
+      font-size: 1rem;
+    }
+
+    & img {
+      width: 20rem;
+    }
+
+    & button {
+      font-size: 15px;
+      width: 20rem;
+    }
+  }
 }
