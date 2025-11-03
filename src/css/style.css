@@ -91,6 +91,7 @@ header{
     display: none;
 }
 
+/* DESIGN MOBILE*/
 @media screen and (max-width: 770px){
     .nav-bar-links{
         display: none;
@@ -137,3 +138,50 @@ header{
     }
     /*FIM DO MENU RESPONSIVO*/
 }
+
+
+/* INICIO DO FOOTER*/
+.rodape{
+    background-color: var(--SombraCinza);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 -3px 10px var(--SombraCinza);
+
+    .rodape-containers{
+            height: 300px;
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 2rem;
+            border: 1px solid var(--Branco);
+        
+            .logo-rodape{
+                width: 7rem;
+                padding: 10px;
+            }
+        }
+
+    .dir{
+        text-align: center;
+        color: var(--Branco);
+        font-size: 0.7rem;
+        height: 3rem;
+        align-content: center;
+        margin-bottom: 1.5rem;
+        
+        
+        .dir-marca{
+            padding-bottom: 0.5rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 900;
+            font-size: 0.8rem;
+        }
+
+        .dir-reservados{
+            font-family: 'Courier New', Courier, monospace;
+            
+        }
+    }
+}
+/* FIM DO FOOTER*/
