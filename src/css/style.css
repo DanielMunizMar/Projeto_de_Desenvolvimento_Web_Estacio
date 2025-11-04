@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 :root{
@@ -140,48 +141,81 @@ header{
 }
 
 
-/* INICIO DO FOOTER*/
+/* INICIO DO RODAPE */
 .rodape{
-    background-color: var(--SombraCinza);
+    background-color: var(--VermelhoBase);
     width: 100%;
     height: auto;
     position: absolute;
     bottom: 0;
     box-shadow: 0 -3px 10px var(--SombraCinza);
 
-    .rodape-containers{
-            height: 300px;
-            width: 80%;
-            margin-left: 10%;
-            margin-top: 2rem;
-            border: 1px solid var(--Branco);
+    .rodape-space{
+        height: 300px;
+        width: 88%;
+        margin-left: 6%;
+        margin-top: 2rem;
+        border: 1px solid var(--Branco);
         
-            .logo-rodape{
-                width: 7rem;
-                padding: 10px;
+        .logo-rodape{
+            width: 7rem;
+            padding: 10px; 
+        }
+
+        .rodape-containers{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            .rodape-container{
+            color: white;
+            padding: 1.1rem;
+            border: 1px solid;
+
+                .redes{
+                    display: flex;
+                    gap: 0.5rem;
+                    padding-top: 1rem;
+                    
+
+                    .rede-social{
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        color: var(--Branco);
+                        align-content: center;
+                        text-align: center;
+
+                        
+                    }
+
+                    #instagram{
+                            background: linear-gradient(red, white);
+                        }
+                }
             }
-        }
 
-    .dir{
-        text-align: center;
-        color: var(--Branco);
-        font-size: 0.7rem;
-        height: 3rem;
-        align-content: center;
-        margin-bottom: 1.5rem;
-        
-        
-        .dir-marca{
-            padding-bottom: 0.5rem;
-            font-family: 'Courier New', Courier, monospace;
-            font-weight: 900;
-            font-size: 0.8rem;
-        }
-
-        .dir-reservados{
-            font-family: 'Courier New', Courier, monospace;
-            
         }
     }
 }
-/* FIM DO FOOTER*/
+
+    /* DIREITOS RESERVADOS */
+.dir{
+    text-align: center;
+    color: var(--Branco);
+    font-size: 0.7rem;
+    height: 3rem;
+    align-content: center;
+    margin-bottom: 1.5rem;
+    
+    .dir-marca{
+        padding-bottom: 0.5rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 900;
+        font-size: 0.8rem;
+    }
+
+    .dir-reservados{
+        font-family: 'Courier New', Courier, monospace;
+        
+    }
+}
+/* FIM DO RODAPE */
