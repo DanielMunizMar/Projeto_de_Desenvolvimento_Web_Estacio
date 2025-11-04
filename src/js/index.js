@@ -26,9 +26,9 @@ const vagas = {
   },
 
   especialistadedados: {
-    titulo: "Especialista em E-books (EPUB, MOBI, PDF interativo)",
+    titulo: "Especialista em E-books",
     descricao:
-      "Atuar na conversão e formatação de livros para diversos formatos digitais (EPUB, MOBI). Exige domínio de HTML, CSS e ferramentas de formatação especializadas.",
+      "Atuar na conversão e formatação de livros para diversos formatos digitais (EPUB, MOBI, PDF interativo). Exige domínio de HTML, CSS e ferramentas de formatação especializadas.",
   },
 
   gerenteprojetos: {
