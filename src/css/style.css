@@ -147,16 +147,15 @@ header{
     background-color: var(--VermelhoBase);
     width: 100%;
     height: auto;
-    position: absolute;
-    bottom: 0;
+
     box-shadow: 0 -3px 10px var(--SombraCinza);
 
     .rodape-space{
-        height: 300px;
+        height: auto;
         width: 70%;
         margin-left: 15%;
         margin-top: 2rem;
-        border: 1px solid var(--Branco);
+
         
         .logo-rodape{
             width: 7rem;
@@ -164,16 +163,17 @@ header{
         }
 
         .rodape-containers{
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             display: flex;
 
             .rodape-container{
             color: white;
             padding: 1.1rem;
-            border: 1px solid;
-
+            display: block;
+            
+                /* REDES SOCIAIS*/
                 .redes{
                     display: flex;
                     gap: 0.5rem;
@@ -230,6 +230,63 @@ header{
                     }
                 }
             }
+
+            /* LINKS IMPORTANTES*/
+            ul{
+                margin-top: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+                li{
+                    list-style-type: none;
+                    
+                    a{
+                        text-decoration: none;
+                        color: var(--Branco);
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        transition: 0.5s;
+
+                        &:hover{
+                            color: var(--Ciano);
+                        }
+                    }
+                }
+            }
+
+            /* NEWS LETTER*/
+            .news{
+                margin-top: 1rem;
+                background-color: var(--Branco);
+                width: 100%;
+                padding: 1.2rem;    
+
+                label{
+                    color: var(--SombraCinza);
+                }
+
+                input{
+                    padding: 0.2rem;
+                    margin: 0.4rem 0;
+                    width: 100%;
+                }
+
+                button{
+                    width: 100%;
+                    height: 1.8rem;
+                    background-color: var(--VermelhoBase);
+                    border: none;
+                    color: var(--Branco);
+                    border-r: 20px;
+                    cursor: pointer;
+                    transition: 0.5s;
+
+                    &:hover{
+                        background-color: var(--VermelhoEscuro);
+                        color: var(--Ciano);
+                    }
+                }
+            }
+
         }
     }
 }
