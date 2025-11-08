@@ -176,12 +176,11 @@ ul{
 
 /* Estilização da página contato.html*/
 
-/* Estilização da página contato.html*/
-
 form{
-    max-width: 400px;
+    width: 100%;
     margin: 20px;
-    padding: 20px 40px 15px 20px;
+    margin-top: 2rem;
+    padding: 1em;
     animation: fadein 1.5s ease-in-out;
 }
 @keyframes fadein {
@@ -214,6 +213,8 @@ label{
     font-weight: bold;
     color: #000000;
     font-size: 16px;
+    padding-top: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 textarea{
@@ -223,11 +224,19 @@ textarea{
     padding: 10px;
     font-size: 16px;
     margin-bottom: 5px;
-}
-textarea:focus{
+    max-width: 100%; 
+    box-sizing: border-box; 
+
+&:focus{
     outline: none;
     border-bottom: 2px solid var(--SombraCinza);
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+&:placeholder{
+    color: #464646;
+    font-style: italic;
+}
 }
 form .animado{
     width: 100%;
@@ -250,8 +259,22 @@ form .animado{
     background-color: #000000;
 }
 .seletor{
-    font-size: 16px;
-    padding: 10px 0px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    #setor{
+    border-radius: 2rem;
+    border: 3px solid #000000;
+    width: 80%;
+    transition: transform 0.2s ease ease-in-out;
+    outline: none;
+    &:active{
+    transform: translateY(2px);
+    
+
+    }
+}
+
 }
 #principal{
     margin-top: 2rem;
@@ -264,6 +287,18 @@ form .animado{
 
 #formulario{
     width: 55%;
+    
+    div{
+    text-align: justify;
+    width: 80%;
+    margin-left: 10%;
+    
+    p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    }
+
+    }
 }
 
 #info{
@@ -273,17 +308,69 @@ form .animado{
     h2{
     padding-bottom: 0.7rem;
     color: var(--VermelhoBase);
+    text-align: center;
+    
     }
     ul{
     display: flex;
     flex-direction: column;
     font-size: 1rem;
     color: #464646;
-
+    width: 80%;
     p{
-    font-weight: 100;
+    font-weight: 300;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+}
+}
+
+/*Responsavidade da página de contatos*/
+
+@media screen and (max-width: 800px) {
+    #principal{
+    margin-top: 2rem;
+    height: auto;
+    display: flex;
+    width: 100%;
+    flex-direction: column;   
+
+    #formulario{
+    width: 80%;
+    margin-left: 10%;
+    div{
+    text-align: justify;
+    width: 80%;
     
+    p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    }
 
     }
+}
+#info{
+    background-color: var(--Cinza2);
+    width:80%;
+    margin-left: 10%;
+    
+    h2{
+    padding-bottom: 0.7rem;
+    color: var(--VermelhoBase);
+    text-align: center;
+    
     }
+    ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: #464646;
+    width: 80%;
+    p{
+    font-weight: 300;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+}
+}
+
+}
 }
