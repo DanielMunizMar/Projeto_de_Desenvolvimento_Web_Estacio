@@ -258,7 +258,8 @@ header{
                 margin-top: 1rem;
                 background-color: var(--Branco);
                 width: 100%;
-                padding: 1.2rem;    
+                padding: 1.2rem;
+                border-radius: 10px;    
 
                 label{
                     color: var(--SombraCinza);
@@ -276,7 +277,7 @@ header{
                     background-color: var(--VermelhoBase);
                     border: none;
                     color: var(--Branco);
-                    border-r: 20px;
+                    border: none;
                     cursor: pointer;
                     transition: 0.5s;
 
@@ -286,7 +287,6 @@ header{
                     }
                 }
             }
-
         }
     }
 }
