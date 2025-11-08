@@ -176,6 +176,8 @@ ul{
 
 /* Estilização da página contato.html*/
 
+/* Estilização da página contato.html*/
+
 form{
     max-width: 400px;
     margin: 20px;
@@ -199,13 +201,11 @@ form input[type="text"]{
     font-size: 16px;
     border: none;
     border-bottom: 1px solid;
-    transition: background-color 300ms ease;
 }
-form input[type="text"]:active{
-    background-color: #808080;
-    border: none;
-    border-bottom: 1px solid ;
-    outline: none;
+form input[type="text"]:focus{
+outline: none; /* Remove o padrão do navegador */
+border-bottom: 2px solid var(--SombraCinza); /*Muda a borda de baixo*/
+box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adiciona uma sombra sutil*/
 }
 
 label{
@@ -217,17 +217,17 @@ label{
 }
 
 textarea{
-    border: 1px solid #000000;
+    border: none;
+    border-bottom: 1px solid #000000;
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    transition: background-color 300ms ease ;
-    border-radius: 10px;
     margin-bottom: 5px;
 }
-textarea:active{
-    background-color: #808080;
+textarea:focus{
     outline: none;
+    border-bottom: 2px solid var(--SombraCinza);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 form .animado{
     width: 100%;
@@ -244,7 +244,7 @@ form .animado{
     transition: transform 1s ease, background-color 0.3s ease;
 }
 .animado:hover{
-    transform: scale(1.1);
+    transform: scale(110%);
 }
 .animado:active{
     background-color: #000000;
@@ -253,26 +253,37 @@ form .animado{
     font-size: 16px;
     padding: 10px 0px;
 }
-
-
 #principal{
-    border: 1px solid;
+    margin-top: 2rem;
     height: auto;
     display: flex;
-    width: 80%;
-    margin-left: 10%;
-    gap: 15%;
+    width: 86%;
+    margin-left: 7%;
+    gap: 5%;
 }
 
 #formulario{
-    border: 1px solid;
-
     width: 55%;
-
 }
 
 #info{
-    border: 1px solid;
     background-color: var(--Cinza2);
     width:30%;
+    padding: 0.4rem;
+    h2{
+    padding-bottom: 0.7rem;
+    color: var(--VermelhoBase);
+    }
+    ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: #464646;
+
+    p{
+    font-weight: 100;
+    
+
+    }
+    }
 }
