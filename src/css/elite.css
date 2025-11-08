@@ -24,7 +24,7 @@
 header{
     background-color: var(--VermelhoBase);
     height: 7.5rem;
-    box-shadow: 0 3px 10px var(--SombraCinza);
+
 }
 
 .nav-bar{
@@ -168,7 +168,7 @@ ul{
         }
     }
 
-    .open{
+    .open{ 
         display: block;
         position: relative;
         z-index: 10;
@@ -177,3 +177,42 @@ ul{
 }
 /*FIM DO HEADER DO SITE*/
 
+.p-1{
+    background: linear-gradient(#b81515, #000);
+    height: 80vh;
+    
+
+    .corpo{
+        height: auto;
+        width: 80%;
+        margin-left: 10%;
+        padding-top: 1rem;
+        border-radius: 20px;
+        h2{
+            font-family: 'charm', sans-serif;
+            color: var(--Branco);
+            font-size: 10rem;
+            text-align: center;
+        }
+
+        .descricao-elite{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            p{
+                color: var(--Branco);
+                font-family: 'Courier New', Courier, monospace;
+                text-align: justify;
+    
+            }
+    
+    
+        }
+    }
+}
+
+.p-2{
+    background: linear-gradient( #000, #b81515);
+    height: 80vh;
+}

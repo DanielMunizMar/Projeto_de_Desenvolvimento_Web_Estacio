@@ -1,11 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     box-sizing: border-box;
 }
+
 /*PALETA DE CORES DO SITE*/
-:root{
+:root {
     --VermelhoBase: #b81515;
     --VermelhoClaro: #db6161;
     --Branco: #FFFFFF;
@@ -18,196 +19,206 @@
 }
 
 /* HEADER DO SITE*/
-header{
+header {
     background-color: var(--VermelhoBase);
     height: 7.5rem;
     box-shadow: 0 3px 10px var(--SombraCinza);
 }
 
-.nav-bar{
+.nav-bar {
     display: flex;
     padding: 1.5rem 3rem;
     justify-content: space-between;
 }
 
-.logo-icon{
+.logo-icon {
     display: flex;
     align-items: center;
 
-    #logo{
+    #logo {
         width: 10rem;
     }
 }
 
-.nav-list{
+.nav-list {
     display: flex;
     align-items: center;
 }
 
-ul{
+ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 2rem;
 
-    .nav-link{
+    .nav-link {
         text-decoration: none;
         font-size: 1.3rem;
         font-weight: 600;
         color: var(--Branco);
         transition: 0.5s;
 
-        &:hover{
-          color: var(--Ciano);
+        &:hover {
+            color: var(--Ciano);
         }
     }
 }
 
-.nav-button{
+.nav-button {
     align-content: center;
 }
 
-.login-button{
+.login-button {
     border: none;
     background-color: var(--Branco);
     padding: 0.625rem 0.938rem;
     border-radius: 5px;
     transition: 0.5s;
-    a{
+
+    a {
         text-decoration: none;
         color: var(--VermelhoBase);
         font-size: 1.1rem;
     }
 
-    &:hover{
+    &:hover {
         background-color: var(--SombraCinza);
-        a{
+
+        a {
             color: var(--Branco);
         }
     }
 }
 
-.mobile-menu-icon{
+.mobile-menu-icon {
     display: none;
     align-content: center;
 
-    button{
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-            
-        }
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+    }
 }
 
-.mobile-menu{
+.mobile-menu {
     display: none;
-    background-color:  var(--VermelhoBase);
+    background-color: var(--VermelhoBase);
     box-shadow: 0 3px 5px var(--SombraCinza);
 }
 
 /*MENU RESPONSIVO*/
-@media screen and (max-width: 870px){
-   .nav-bar{
+@media screen and (max-width: 870px) {
+    .nav-bar {
         padding: 1.5rem 3rem;
-   }
+    }
 
-       .nav-item{
+    .nav-item {
         display: none;
     }
 
-    .login-button{
+    .login-button {
         display: none;
     }
 
-    .mobile-menu-icon{
+    .mobile-menu-icon {
         display: block;
     }
 
-    .mobile-menu ul{
+    .mobile-menu ul {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
     }
 
-    .mobile-menu .nav-item{ 
+    .mobile-menu .nav-item {
         display: block;
-        padding-top: 1,2rem;
+        padding-top: 1, 2rem;
     }
 
-    .mobile-menu .login-button-2{
+    .mobile-menu .login-button-2 {
         display: block;
         padding: 1rem 2rem;
         border: none;
-    
-        button{
+
+        button {
             width: 100%;
             height: 2rem;
             border: none;
             border-radius: 10px;
             transition: 0.5s;
 
-            a{
+            a {
                 text-decoration: none;
                 color: var(--VermelhoBase);
                 font-size: 1.2rem;
             }
-            
-            &:hover{
+
+            &:hover {
                 background-color: var(--SombraCinza);
 
-                a{
+                a {
                     color: var(--Branco);
                 }
             }
         }
     }
 
-    .open{
+    .open {
         display: block;
         position: relative;
         z-index: 10;
     }
+
     /*FIM DO MENU RESPONSIVO*/
 }
+
 /*FIM DO HEADER DO SITE*/
 
 
 
 /* Estilização da página contato.html*/
 
-form{
+form {
     width: 100%;
     margin: 20px;
     margin-top: 2rem;
     padding: 1em;
     animation: fadein 1.5s ease-in-out;
 }
+
 @keyframes fadein {
-from{
-opacity: 0;
+    from {
+        opacity: 0;
 
-}    
-to{
-opacity: 1;
+    }
 
+    to {
+        opacity: 1;
+
+    }
 }
-}
 
-form input[type="text"]{
+form input[type="text"] {
     width: 100%;
     padding: 5px;
     font-size: 16px;
     border: none;
     border-bottom: 1px solid;
 }
-form input[type="text"]:focus{
-outline: none; /* Remove o padrão do navegador */
-border-bottom: 2px solid var(--SombraCinza); /*Muda a borda de baixo*/
-box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adiciona uma sombra sutil*/
+
+form input[type="text"]:focus {
+    outline: none;
+    /* Remove o padrão do navegador */
+    border-bottom: 2px solid var(--SombraCinza);
+    /*Muda a borda de baixo*/
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Adiciona uma sombra sutil*/
 }
 
-label{
+label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
@@ -217,33 +228,34 @@ label{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-textarea{
+textarea {
     border: none;
     border-bottom: 1px solid #000000;
     width: 100%;
     padding: 10px;
     font-size: 16px;
     margin-bottom: 5px;
-    max-width: 100%; 
-    box-sizing: border-box; 
+    max-width: 100%;
+    box-sizing: border-box;
 
-&:focus{
-    outline: none;
-    border-bottom: 2px solid var(--SombraCinza);
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    &:focus {
+        outline: none;
+        border-bottom: 2px solid var(--SombraCinza);
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    &:placeholder {
+        color: #464646;
+        font-style: italic;
+    }
 }
 
-&:placeholder{
-    color: #464646;
-    font-style: italic;
-}
-}
-form .animado{
+form .animado {
     width: 100%;
     font-size: 16px;
 }
 
-.animado{
+.animado {
     padding: 10px;
     border: none;
     color: white;
@@ -252,31 +264,37 @@ form .animado{
     cursor: pointer;
     transition: transform 1s ease, background-color 0.3s ease;
 }
-.animado:hover{
+
+.animado:hover {
     transform: scale(110%);
 }
-.animado:active{
+
+.animado:active {
     background-color: #000000;
 }
-.seletor{
+
+.seletor {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    #setor{
-    border-radius: 2rem;
-    border: 3px solid #000000;
-    width: 80%;
-    transition: transform 0.2s ease ease-in-out;
-    outline: none;
-    &:active{
-    transform: translateY(2px);
-    
 
+    #setor {
+        border-radius: 2rem;
+        border: 3px solid #000000;
+        width: 80%;
+        transition: transform 0.2s ease ease-in-out;
+        outline: none;
+
+        &:active {
+            transform: translateY(2px);
+
+
+        }
     }
-}
 
 }
-#principal{
+
+#principal {
     margin-top: 2rem;
     height: auto;
     display: flex;
@@ -285,92 +303,112 @@ form .animado{
     gap: 5%;
 }
 
-#formulario{
+#formulario {
     width: 55%;
-    
-    div{
-    text-align: justify;
-    width: 80%;
-    margin-left: 10%;
-    
-    p{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-    }
+
+    div {
+        text-align: justify;
+        width: 80%;
+        margin-left: 10%;
+
+        p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
 
     }
 }
 
-#info{
+#info {
     background-color: var(--Cinza2);
-    width:30%;
+    width: 30%;
     padding: 0.4rem;
-    h2{
-    padding-bottom: 0.7rem;
-    color: var(--VermelhoBase);
-    text-align: center;
-    
+
+    h2 {
+        padding-bottom: 0.7rem;
+        color: var(--VermelhoBase);
+        text-align: center;
+
     }
-    ul{
-    display: flex;
-    flex-direction: column;
-    font-size: 1rem;
-    color: #464646;
-    width: 80%;
-    p{
-    font-weight: 300;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-}
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        color: #464646;
+        width: 80%;
+
+        p {
+            font-weight: 300;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    }
 }
 
 /*Responsavidade da página de contatos*/
 
 @media screen and (max-width: 800px) {
-    #principal{
-    margin-top: 2rem;
-    height: auto;
-    display: flex;
+    #principal {
+        margin-top: 2rem;
+        height: auto;
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+        margin-left: 5%;
+
+        /*COISA NOVA*/
+        
+form {
     width: 100%;
-    flex-direction: column;   
-
-    #formulario{
-    width: 80%;
-    margin-left: 10%;
-    div{
-    text-align: justify;
-    width: 80%;
-    
-    p{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-    }
-
-    }
-}
-#info{
-    background-color: var(--Cinza2);
-    width:80%;
-    margin-left: 10%;
-    
-    h2{
-    padding-bottom: 0.7rem;
-    color: var(--VermelhoBase);
-    text-align: center;
-    
-    }
-    ul{
-    display: flex;
-    flex-direction: column;
-    font-size: 1rem;
-    color: #464646;
-    width: 80%;
-    p{
-    font-weight: 300;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-}
+    margin: 0;
+    margin-top: 2rem;
+    padding: 0;
+    padding-bottom: 2rem;
+    animation: fadein 1.5s ease-in-out;
 }
 
 }
-}
+        /*COISA NOVA*/
+        
+        #formulario {
+            width: 90%;
+            margin-left: 5%;
+
+            div {
+                text-align: justify;
+                width: 90%;
+                margin-left: 5%;
+
+                p {
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+            }
+        }
+
+        #info {
+            background-color: var(--Cinza2);
+            width: 90%;
+            margin-left: 5%;
+            padding: 1rem;
+
+            h2 {
+                padding-bottom: 0.7rem;
+                color: var(--VermelhoBase);
+                text-align: center;
+
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                font-size: 1rem;
+                color: #464646;
+                width: 80%;
+
+                p {
+                    font-weight: 300;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+            }
+        }
+    }
