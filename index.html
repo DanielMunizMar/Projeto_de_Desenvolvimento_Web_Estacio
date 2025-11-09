@@ -85,11 +85,13 @@
                 <div class="rodape-container">
                     <h3 class="container-titulo">Participe do nosso News Letter</h3>
                     <div class="news">
-                        <label for="">Nome</label>
-                        <input type="text"><br>
-                        <label for="">Email</label>
-                        <input type="text"><br>
-                        <button>ENVIAR</button>
+                        <form action="https://formsubmit.co/your@email.com" method="POST">
+                            <label for="">Nome</label>
+                            <input type="text" name="nome" required><br>
+                            <label for="">Email</label>
+                            <input type="email" name="email" required><br>
+                            <button type="submit">ENVIAR</button>
+                        </form>
                     </div>
                 </div>
                 
