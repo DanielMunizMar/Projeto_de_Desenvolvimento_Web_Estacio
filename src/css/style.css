@@ -7,7 +7,7 @@
 
 :root{
     --VermelhoBase: #b81515;
-    --VermelhoClaro: #db6161;
+    --ResaltoAmarelo: #ffc83c;
     --Branco: #FFFFFF;
     --VermelhoEscuro: #630505;
     --Preto: #121212;
@@ -148,13 +148,10 @@ header{
     width: 100%;
     height: auto;
 
-    box-shadow: 0 -3px 10px var(--SombraCinza);
-
     .rodape-space{
         height: auto;
         width: 70%;
         margin-left: 15%;
-        margin-top: 2rem;
 
         
         .logo-rodape{
@@ -269,6 +266,15 @@ header{
                     padding: 0.2rem;
                     margin: 0.4rem 0;
                     width: 100%;
+                    border-radius: 10px;
+                    padding: 0.4rem;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-weight: 900;
+                    transition: 1s;
+
+                    &:focus{
+                        color: var(--VermelhoBase);
+                    }
                 }
 
                 button{
@@ -280,10 +286,11 @@ header{
                     border: none;
                     cursor: pointer;
                     transition: 0.5s;
+                    border-radius: 10px;
 
                     &:hover{
-                        background-color: var(--VermelhoEscuro);
-                        color: var(--Ciano);
+                        background-color: var(--ResaltoAmarelo);
+                        color: var(--VermelhoBase);
                     }
                 }
             }
@@ -296,9 +303,9 @@ header{
     text-align: center;
     color: var(--Branco);
     font-size: 0.7rem;
-    height: 3rem;
+    height: 5rem;
     align-content: center;
-    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
     
     .dir-marca{
         padding-bottom: 0.5rem;

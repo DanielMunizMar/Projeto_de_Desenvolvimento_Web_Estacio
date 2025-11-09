@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 /*Transforma a Logo em um objeto clicável, serve de atalho para a home*/
@@ -257,3 +258,190 @@ ul {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+/* INICIO DO RODAPE */
+.rodape{
+    background-color: var(--VermelhoBase);
+    width: 100%;
+    height: auto;
+
+    .rodape-space{
+        height: auto;
+        width: 70%;
+        margin-left: 15%;
+
+        
+        .logo-rodape{
+            width: 7rem;
+            padding: 10px; 
+        }
+
+        .rodape-containers{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            display: flex;
+
+            .rodape-container{
+            color: white;
+            padding: 1.1rem;
+            display: block;
+            
+                /* REDES SOCIAIS*/
+                .redes{
+                    display: flex;
+                    gap: 0.5rem;
+                    padding-top: 1rem;
+
+                    .rede-social{
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        color: var(--Branco);
+                        align-content: center;
+                        text-align: center;
+                        border-radius: 50%;
+          
+                    }
+
+                    #instagram{
+                        background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+                        transition: 1s;
+
+                        &:hover{
+                            background: linear-gradient(#461577, #870e49, #995e0a);
+                            color: var(--Cinza2);
+                        }
+                    }
+
+                    #facebook{
+                        background-color: #426bb3;
+                        transition: 1s;
+
+                        &:hover{
+                            background-color: #213e6f;
+                            color: var(--Cinza2);
+                        }
+                    }
+
+                    #whatsapp{
+                        background-color: #25d366;
+                        transition: 1s;
+
+                        &:hover{
+                            background-color: #16843e;
+                            color: var(--Cinza2);
+                        }
+                    }
+
+                    #discord{
+                        background-color: #0056c7;
+                        transition: 1s;
+
+                        &:hover{
+                            background-color: #213e6f;
+                            color: var(--Cinza2);
+                        }
+                    }
+                }
+            }
+
+            /* LINKS IMPORTANTES*/
+            ul{
+                margin-top: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+                li{
+                    list-style-type: none;
+                    
+                    a{
+                        text-decoration: none;
+                        color: var(--Branco);
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        transition: 0.5s;
+
+                        &:hover{
+                            color: var(--Ciano);
+                        }
+                    }
+                }
+            }
+
+            /* NEWS LETTER*/
+            .news{
+                margin-top: 1rem;
+                background-color: var(--Branco);
+                width: 100%;
+                padding: 1.2rem;
+                border-radius: 10px;    
+
+                label{
+                    color: var(--SombraCinza);
+                }
+
+                input{
+                    padding: 0.2rem;
+                    margin: 0.4rem 0;
+                    width: 100%;
+                    border-radius: 10px;
+                    padding: 0.4rem;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-weight: 900;
+                    transition: 1s;
+
+                    &:focus{
+                        color: var(--VermelhoBase);
+                    }
+                }
+
+                button{
+                    width: 100%;
+                    height: 1.8rem;
+                    background-color: var(--VermelhoBase);
+                    border: none;
+                    color: var(--Branco);
+                    border: none;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    border-radius: 10px;
+
+                    &:hover{
+                        background-color: var(--ResaltoAmarelo);
+                        color: var(--VermelhoBase);
+                    }
+                }
+            }
+        }
+    }
+}
+
+    /* DIREITOS RESERVADOS */
+.dir{
+    text-align: center;
+    color: var(--Branco);
+    font-size: 0.7rem;
+    height: 5rem;
+    align-content: center;
+    padding-bottom: 1.5rem;
+    
+    .dir-marca{
+        padding-bottom: 0.5rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 900;
+        font-size: 0.8rem;
+    }
+
+    .dir-reservados{
+        font-family: 'Courier New', Courier, monospace;
+        
+    }
+}
+/* FIM DO RODAPE */
