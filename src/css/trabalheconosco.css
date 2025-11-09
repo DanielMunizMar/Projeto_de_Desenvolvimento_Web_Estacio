@@ -10,171 +10,170 @@
 }
 
 /*PALETA DE CORES DO SITE*/
-:root{
-    --VermelhoBase: #b81515;
-    --VermelhoClaro: #db6161;
-    --Branco: #FFFFFF;
-    --VermelhoEscuro: #630505;
-    --Preto: #121212;
-    --Cinza: rgba(255, 255, 255, 0.5);
-    --Ciano: #00ffff;
-    --SombraCinza: #464646;
+:root {
+  --VermelhoBase: #b81515;
+  --VermelhoClaro: #db6161;
+  --Branco: #ffffff;
+  --VermelhoEscuro: #630505;
+  --Preto: #121212;
+  --Cinza: rgba(255, 255, 255, 0.5);
+  --Ciano: #00ffff;
+  --SombraCinza: #464646;
 }
 
 /* HEADER DO SITE*/
-header{
-    background-color: var(--VermelhoBase);
-    height: 7.5rem;
-    box-shadow: 0 3px 10px var(--SombraCinza);
+header {
+  background-color: var(--VermelhoBase);
+  height: 7.5rem;
+  box-shadow: 0 3px 10px var(--SombraCinza);
 }
 
-.nav-bar{
-    display: flex;
-    padding: 1.5rem 3rem;
-    justify-content: space-between;
+.nav-bar {
+  display: flex;
+  padding: 1.5rem 3rem;
+  justify-content: space-between;
 }
 
-.logo-icon{
-    display: flex;
-    align-items: center;
+.logo-icon {
+  display: flex;
+  align-items: center;
 
-    #logo{
-        width: 10rem;
-    }
+  #logo {
+    width: 10rem;
+  }
 }
 
-.nav-list{
-    display: flex;
-    align-items: center;
+.nav-list {
+  display: flex;
+  align-items: center;
 }
 
-ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 
-    .nav-link{
-        text-decoration: none;
-        font-size: 1.3rem;
-        font-weight: 600;
-        color: var(--Branco);
-        transition: 0.5s;
-
-        &:hover{
-          color: var(--Ciano);
-        }
-    }
-}
-
-.nav-button{
-    align-content: center;
-}
-
-.login-button{
-    border: none;
-    background-color: var(--Branco);
-    padding: 0.625rem 0.938rem;
-    border-radius: 5px;
+  .nav-link {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--Branco);
     transition: 0.5s;
 
-    a{
-        text-decoration: none;
-        color: var(--VermelhoBase);
-        font-size: 1.1rem;
+    &:hover {
+      color: var(--Ciano);
     }
-
-    &:hover{
-                background-color: var(--SombraCinza);
-
-                a{
-                    color: var(--Branco);
-                }
-            }
+  }
 }
 
-.mobile-menu-icon{
-    display: none;
-    align-content: center;
-
-    button{
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-            
-        }
+.nav-button {
+  align-content: center;
 }
 
-.mobile-menu{
-    display: none;
-    background-color:  var(--VermelhoBase);
-    box-shadow: 0 3px 5px var(--SombraCinza);
+.login-button {
+  border: none;
+  background-color: var(--Branco);
+  padding: 0.625rem 0.938rem;
+  border-radius: 5px;
+  transition: 0.5s;
+
+  a {
+    text-decoration: none;
+    color: var(--VermelhoBase);
+    font-size: 1.1rem;
+  }
+
+  &:hover {
+    background-color: var(--SombraCinza);
+
+    a {
+      color: var(--Branco);
+    }
+  }
+}
+
+.mobile-menu-icon {
+  display: none;
+  align-content: center;
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.mobile-menu {
+  display: none;
+  background-color: var(--VermelhoBase);
+  box-shadow: 0 3px 5px var(--SombraCinza);
 }
 
 /*MENU RESPONSIVO*/
-@media screen and (max-width: 870px){
-   .nav-bar{
-        padding: 1.5rem 3rem;
-   }
+@media screen and (max-width: 870px) {
+  .nav-bar {
+    padding: 1.5rem 3rem;
+  }
 
-       .nav-item{
-        display: none;
-    }
+  .nav-item {
+    display: none;
+  }
 
-    .login-button{
-        display: none;
-    }
+  .login-button {
+    display: none;
+  }
 
-    .mobile-menu-icon{
-        display: block;
-    }
+  .mobile-menu-icon {
+    display: block;
+  }
 
-    .mobile-menu ul{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
 
-    .mobile-menu .nav-item{ 
-        display: block;
-        padding-top: 1,2rem;
-    }
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1, 2rem;
+  }
 
-    .mobile-menu .login-button-2{
-        display: block;
-        padding: 1rem 2rem;
-        border: none;
-    
-        button{
-            width: 100%;
-            height: 2rem;
-            border: none;
-            border-radius: 10px;
-            transition: 0.5s;
+  .mobile-menu .login-button-2 {
+    display: block;
+    padding: 1rem 2rem;
+    border: none;
 
-            a{
-                text-decoration: none;
-                color: var(--VermelhoBase);
-                font-size: 1.2rem;
-            }
-            
-            &:hover{
-                background-color: var(--SombraCinza);
+    button {
+      width: 100%;
+      height: 2rem;
+      border: none;
+      border-radius: 10px;
+      transition: 0.5s;
 
-                a{
-                    color: var(--Branco);
-                }
-            }
+      a {
+        text-decoration: none;
+        color: var(--VermelhoBase);
+        font-size: 1.2rem;
+      }
+
+      &:hover {
+        background-color: var(--SombraCinza);
+
+        a {
+          color: var(--Branco);
         }
+      }
     }
+  }
 
-    .open{
-        display: block;
-        position: relative;
-        z-index: 10;
-    }
-    /*FIM DO MENU RESPONSIVO*/
+  .open {
+    display: block;
+    position: relative;
+    z-index: 10;
+  }
+  /*FIM DO MENU RESPONSIVO*/
 }
 /*FIM DO HEADER DO SITE*/
 
@@ -216,12 +215,12 @@ h1 {
 
 /* CONTAINER DE VAGAS */
 .vagas-cards {
-  margin: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 5px;
   animation: fadein 2s ease-in-out;
+  margin-top: 1rem;
 }
 
 @keyframes fadein {
@@ -235,14 +234,16 @@ h1 {
 
 /* DESCRIÇÃO DA VAGA */
 .vaga-descricao {
-  width: 30rem;
+  width: 22rem;
   text-align: center;
-  padding: 1rem;
+  padding: 12px 8px;
   background-color: #cfbcb6;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 8px;
 }
 
 .vaga-descricao:hover {
@@ -251,7 +252,7 @@ h1 {
 }
 
 .vaga-descricao img {
-  width: 30rem;
+  width: 20rem;
   object-fit: cover;
   aspect-ratio: 16/9;
   border-radius: 10px;
@@ -259,13 +260,13 @@ h1 {
 
 .vaga-descricao h4 {
   margin: 10px 0;
-  font-size: 1.1rem;
+  font-size: 20px;
   font-weight: bold;
   color: #222;
 }
 
 .vaga-descricao button {
-  padding: 10px 15px;
+  padding: 8px 12px;
   font-size: 17px;
   background-color: #b81515;
   color: #fff;
@@ -281,12 +282,36 @@ h1 {
 /* BLOCO DE DETALHES DA VAGA */
 #containerVaga {
   display: none;
-  margin: 25px;
+  position: absolute;
+  margin: auto;
   font-size: 22px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
   width: 50%;
+  height: 50%;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   background-color: rgba(207, 188, 182);
+}
+
+.btn-fechar-vaga {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.btn-fechar-vaga:hover {
+  background-color: #b81515;
+  color: #fff;
+  padding: 1px 5px;
+  border-radius: 5px;
 }
 
 #detalhesDaVaga {
@@ -313,28 +338,129 @@ h1 {
   background-color: #c26106;
 }
 
-/* RESPONSIVIDADE DO PAINEL DE VAGAS */
-@media screen and (max-width: 870px) {
-  .container-pesquisa {
-    margin: 25px;
+@media screen and (max-width: 880px) {
+  .vagas-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .vaga-descricao {
-    padding: 1rem;
-    width: 38%;
-    height: 20%;
-  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 78%;
+    height: 82%;
+    margin-inline: 10px;
+
     & h4 {
-      font-size: 1rem;
+      font-size: 14px;
     }
 
     & img {
-      width: 20rem;
+      width: 200px;
+      height: 85px;
     }
 
     & button {
-      font-size: 15px;
-      width: 20rem;
+      font-size: 14px;
+      width: 12rem;
+    }
+  }
+}
+
+/* RESPONSIVIDADE DO PAINEL DE VAGAS */
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .container-pesquisa {
+    margin: 25px;
+
+    & input {
+      width: 55%;
+      padding: 8px 8px;
+      font-size: 14px;
+    }
+
+    & button {
+      padding: 8px 8px;
+      font-size: 14px;
+    }
+  }
+
+  .vagas-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+  }
+
+  .vaga-descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 1rem;
+    width: 75%;
+    height: 80%;
+
+    & h4 {
+      font-size: 13.5px;
+    }
+
+    & img {
+      width: 165px;
+    }
+
+    & button {
+      font-size: 13px;
+      width: 8rem;
+      padding: 8px 10px;
+    }
+  }
+
+  #containerVaga {
+    width: 50%;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .container-pesquisa {
+    margin: 25px;
+
+    & input {
+      width: 50%;
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+
+    & button {
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+  }
+
+  .vagas-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .vaga-descricao {
+    width: 75%;
+    height: 80%;
+
+    & img {
+      width: 185px;
+    }
+
+    & button {
+      width: 10rem;
+      padding: 7px 10px;
+      font-size: 12.2px;
     }
   }
 }

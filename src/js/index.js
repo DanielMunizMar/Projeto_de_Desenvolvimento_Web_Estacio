@@ -47,6 +47,7 @@ const vagas = {
 const detalheVaga = document.getElementById("detalhesDaVaga");
 const containerVaga = document.getElementById("containerVaga");
 const botoesDescricao = document.querySelectorAll(".btn-descricao");
+const btnFecharVaga = document.getElementById("btnFechar");
 
 function mostrarDetalhesDaVaga(vagaId) {
   const vaga = vagas[vagaId];
@@ -62,10 +63,12 @@ function mostrarDetalhesDaVaga(vagaId) {
   }
 }
 
-function fecharDetalhesDaVaga() {
+// FECHABLOCO DA VAGA PELO BOTÃO "X"
+btnFecharVaga.addEventListener("click", () => {
   containerVaga.style.display = "none";
-}
+});
 
+// MOSTRAR DETALHES DA VAGA AIO 
 botoesDescricao.forEach((botao) => {
   botao.addEventListener("click", () => {
     containerVaga.style.display = "flex";
