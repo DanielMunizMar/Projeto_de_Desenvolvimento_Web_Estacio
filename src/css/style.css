@@ -169,6 +169,11 @@ header{
             color: white;
             padding: 1.1rem;
             display: block;
+
+            .container-titulo{
+                font-size: 1.17rem;
+                color: white;
+            }
             
                 /* REDES SOCIAIS*/
                 .redes{
@@ -229,7 +234,7 @@ header{
             }
 
             /* LINKS IMPORTANTES*/
-            ul{
+            .lista-links{
                 margin-top: 1rem;
                 display: flex;
                 flex-direction: column;
@@ -270,9 +275,10 @@ header{
                     padding: 0.4rem;
                     font-family: 'Courier New', Courier, monospace;
                     font-weight: 900;
-                    transition: 1s;
 
                     &:focus{
+                        outline: none;
+                        background-color: var(--Cinza2);
                         color: var(--VermelhoBase);
                     }
                 }
@@ -291,7 +297,9 @@ header{
                     &:hover{
                         background-color: var(--ResaltoAmarelo);
                         color: var(--VermelhoBase);
+                        letter-spacing: 0.2rem;
                     }
+
                 }
             }
         }
