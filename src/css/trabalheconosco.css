@@ -215,10 +215,9 @@ h1 {
 
 /* CONTAINER DE VAGAS */
 .vagas-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  gap: 5px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   animation: fadein 2s ease-in-out;
   margin-top: 1rem;
 }
@@ -236,7 +235,7 @@ h1 {
 .vaga-descricao {
   width: 22rem;
   text-align: center;
-  padding: 12px 8px;
+  padding: 10px;
   background-color: #cfbcb6;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -260,14 +259,14 @@ h1 {
 
 .vaga-descricao h4 {
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: #222;
 }
 
 .vaga-descricao button {
-  padding: 8px 12px;
-  font-size: 17px;
+  padding: 8px 10px;
+  font-size: 16px;
   background-color: #b81515;
   color: #fff;
   border: none;
@@ -358,18 +357,23 @@ h1 {
 
     & img {
       width: 200px;
-      height: 85px;
     }
 
     & button {
       font-size: 14px;
-      width: 12rem;
+      width: 8rem;
     }
+  }
+
+  #containerVaga {
+    width: 48%;
+    height: 45%;
+    font-size: 17px;
   }
 }
 
 /* RESPONSIVIDADE DO PAINEL DE VAGAS */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 28px;
   }
@@ -419,8 +423,9 @@ h1 {
   }
 
   #containerVaga {
-    width: 50%;
-    font-size: 18px;
+    width: 47%;
+    height: 45%;
+    font-size: 15px;
   }
 }
 

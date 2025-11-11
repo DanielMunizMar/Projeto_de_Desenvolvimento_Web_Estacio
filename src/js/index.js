@@ -52,12 +52,14 @@ const btnFecharVaga = document.getElementById("btnFechar");
 function mostrarDetalhesDaVaga(vagaId) {
   const vaga = vagas[vagaId];
   if (vaga) {
-    containerVaga.style.display = "block";
+    containerVaga.style.display = "flex";
     detalheVaga.innerHTML = `
+  <div class="space-center">
     <h2>${vaga.titulo}</h2><br>
     <p>${vaga.descricao}</p>
     <button class="btn-candidatar">Candidatar-se</button>
-  `;
+  </div>
+    `;
   } else {
     detalheVaga.innerHTML = "<p>Vaga não encontrada.</p>";
   }
@@ -68,7 +70,7 @@ btnFecharVaga.addEventListener("click", () => {
   containerVaga.style.display = "none";
 });
 
-// MOSTRAR DETALHES DA VAGA AIO 
+// MOSTRAR DETALHES DA VAGA AIO
 botoesDescricao.forEach((botao) => {
   botao.addEventListener("click", () => {
     containerVaga.style.display = "flex";
@@ -78,14 +80,14 @@ botoesDescricao.forEach((botao) => {
 });
 
 //RESPONSIVIDADE DO HEADER
-function menuShow(){
-    let menuMobile = document.querySelector('.mobile-menu');
-    if (menuMobile.classList.contains('open')){
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "../images/icons/aberto.svg";
-    }else{
-        menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "../images/icons/fechado.svg";
-    }
+function menuShow() {
+  let menuMobile = document.querySelector(".mobile-menu");
+  if (menuMobile.classList.contains("open")) {
+    menuMobile.classList.remove("open");
+    document.querySelector(".icon").src = "../images/icons/aberto.svg";
+  } else {
+    menuMobile.classList.add("open");
+    document.querySelector(".icon").src = "../images/icons/fechado.svg";
+  }
 }
 //FIM DA RESPONSIVIDADE DO HEADER
