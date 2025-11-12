@@ -243,39 +243,39 @@ h1 {
   flex-direction: column;
   align-items: center;
   margin: 8px;
+
+  & img {
+    width: 20rem;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+  }
+
+  & h4 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+  }
+
+  & button {
+    padding: 8px 10px;
+    font-size: 16px;
+    background-color: #b81515;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  & button:hover {
+    background-color: #c26106;
+  }
 }
 
 .vaga-descricao:hover {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
   transition: transform 5s ease-in-out;
-}
-
-.vaga-descricao img {
-  width: 20rem;
-  object-fit: cover;
-  aspect-ratio: 16/9;
-  border-radius: 10px;
-}
-
-.vaga-descricao h4 {
-  margin: 10px 0;
-  font-size: 18px;
-  font-weight: bold;
-  color: #222;
-}
-
-.vaga-descricao button {
-  padding: 8px 10px;
-  font-size: 16px;
-  background-color: #b81515;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.vaga-descricao button:hover {
-  background-color: #c26106;
 }
 
 /* BLOCO DE DETALHES DA VAGA */
@@ -289,8 +289,8 @@ h1 {
   top: 0;
   bottom: 0;
   z-index: 10;
-  width: 50%;
-  height: 50%;
+  width: 34%;
+  height: 40%;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   background-color: rgba(207, 188, 182);
@@ -314,17 +314,16 @@ h1 {
 }
 
 #detalhesDaVaga {
-  padding: 30px;
+  padding: 20px;
   border-radius: 8px;
   max-width: 600px;
   margin: 35px 25px;
-  width: 90%;
   position: relative;
 }
 
 .btn-candidatar {
   padding: 10px 15px;
-  font-size: 17px;
+  font-size: 18px;
   background-color: #b81515;
   border: none;
   color: #ffffff;
@@ -367,8 +366,12 @@ h1 {
 
   #containerVaga {
     width: 48%;
-    height: 45%;
+    height: 38%;
     font-size: 17px;
+  }
+
+  #detalhesDaVaga {
+    padding: 18px;
   }
 }
 
@@ -382,7 +385,7 @@ h1 {
     margin: 25px;
 
     & input {
-      width: 55%;
+      width: 50%;
       padding: 8px 8px;
       font-size: 14px;
     }
@@ -403,7 +406,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-inline: 1rem;
+    padding-inline: 10px;
     width: 75%;
     height: 80%;
 
@@ -424,8 +427,12 @@ h1 {
 
   #containerVaga {
     width: 47%;
-    height: 45%;
+    height: 35%;
     font-size: 15px;
+  }
+
+  .btn-fechar-vaga {
+    font-size: 20px;
   }
 }
 
@@ -467,5 +474,69 @@ h1 {
       padding: 7px 10px;
       font-size: 12.2px;
     }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 25px;
+    margin-top: 40px;
+  }
+
+  .container-pesquisa {
+    margin: 20px;
+
+    & input {
+      width: 53%;
+      padding: 6px 10px;
+      font-size: 13px;
+    }
+
+    & button {
+      padding: 6px 10px;
+      font-size: 13px;
+    }
+  }
+  .vaga-descricao {
+    padding: 9px 10px;
+    right: 0;
+    left: 0;
+
+    & h4 {
+      font-size: 12px;
+      margin: 5px 1px;
+    }
+
+    & img {
+      width: 140px;
+    }
+
+    & button {
+      width: 7rem;
+      padding: 5px 7px;
+      font-size: 11px;
+    }
+  }
+
+  #containerVaga {
+    width: 60%;
+    height: 24%;
+    font-size: 12px;
+  }
+
+  .btn-fechar-vaga {
+    font-size: 17px;
+  }
+
+  #detalhesDaVaga {
+    padding: 5px;
+    width: 80%;
+    margin: 18px 15px;
+  }
+
+  .btn-candidatar {
+    padding: 6px 10px;
+    font-size: 14px;
+    margin-top: 8px;
   }
 }
