@@ -10,3 +10,14 @@ function menuShow(){
     }
 }
 //FIM DA RESPONSIVIDADE DO HEADER
+
+// BOTÕES DOS DEVS
+
+function showDesc1(){
+    let devInfo1 = document.querySelector('#dev-bru');
+    if (devInfo1.classList.contains('abrir')){
+        devInfo1.classList.remove('abrir');
+    }else{
+        devInfo1.classList.add('abrir');
+    }
+}

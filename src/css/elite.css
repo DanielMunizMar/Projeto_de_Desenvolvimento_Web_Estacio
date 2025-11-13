@@ -180,10 +180,9 @@ ul {
 
 /*FIM DO HEADER DO SITE*/
 
-.p-1 {
+.estrutura {
     background: linear-gradient(#b81515, #000);
-    height: 80vh;
-
+    height: auto;
 
     .corpo {
         height: auto;
@@ -208,39 +207,34 @@ ul {
                 color: var(--Branco);
                 font-family: 'Courier New', Courier, monospace;
                 text-align: justify;
-
             }
-
-
         }
     }
-}
 
-.p-2 {
-    background: linear-gradient(#000, #b81515);
-    height: 80vh;
-
-    .desenvolvedores{
-        height: 50vh;
-        background-color: #ffffff;
+    .desenvolvedores {
+        height: auto;
+        background-color: var(--Branco);
         width: 86%;
         margin-left: 7%;
         border-radius: 20px;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
 
         h2 {
             font-family: 'charm', sans-serif;
             text-align: center;
-            font-size: 5rem;
+            font-size: 3rem;
             padding: 2rem;
         }
 
-        .desenvolvedores-fotos{
+        .desenvolvedores-fotos {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 1rem;
+            justify-content: space-around;
+            padding: 1rem;
+            gap: 1rem;
 
-            div{
+            div {
                 border: 1px solid var(--VermelhoBase);
                 width: 17rem;
                 height: 17rem;
@@ -248,104 +242,128 @@ ul {
                 justify-content: center;
                 align-items: center;
                 display: flex;
+                cursor: pointer;
+                
 
-                img{
+                img {
                     width: 15rem;
                     border-radius: 50%;
-                    
+                    transition: 1s;
+
+                    &:hover{
+                        width: 17rem;
+                    }
                 }
+            }
+        }
+
+        /* BLOCOS OCULTOS DOS DEVS */
+        .devdesc{
+            padding-bottom: 1rem;
+            width: 90%;
+            margin-left: 5%;
+            display: none;
+
+            h3{
+                text-align: center;
+                font-size: 2rem;
+                padding: 0.5rem;
+                color: var(--VermelhoBase);
+            }
+
+            p{
+                text-align: justify;
+                font-family: 'Courier New', Courier, monospace;
+                color: var(--VermelhoClaro);
             }
         }
     }
 }
 
-
-
-
-
-
-
-
+/* CLASSE PARA ABRIR DEVS */
+.abrir{
+    display: block;
+}
 
 /* INICIO DO RODAPE */
-.rodape{
+.rodape {
     background-color: var(--VermelhoBase);
     width: 100%;
     height: auto;
 
-    .rodape-space{
+    .rodape-space {
         height: auto;
         width: 70%;
         margin-left: 15%;
 
-        
-        .logo-rodape{
+
+        .logo-rodape {
             width: 7rem;
-            padding: 10px; 
+            padding: 10px;
         }
 
-        .rodape-containers{
+        .rodape-containers {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             display: flex;
 
-            .rodape-container{
-            color: white;
-            padding: 1.1rem;
-            display: block;
-            
+            .rodape-container {
+                color: white;
+                padding: 1.1rem;
+                display: block;
+
                 /* REDES SOCIAIS*/
-                .redes{
+                .redes {
                     display: flex;
                     gap: 0.5rem;
                     padding-top: 1rem;
 
-                    .rede-social{
+                    .rede-social {
                         height: 2.5rem;
                         width: 2.5rem;
                         color: var(--Branco);
                         align-content: center;
                         text-align: center;
                         border-radius: 50%;
-          
+
                     }
 
-                    #instagram{
+                    #instagram {
                         background: linear-gradient(#7f37c9, #ff2992, #ff9807);
                         transition: 1s;
 
-                        &:hover{
+                        &:hover {
                             background: linear-gradient(#461577, #870e49, #995e0a);
                             color: var(--Cinza2);
                         }
                     }
 
-                    #facebook{
+                    #facebook {
                         background-color: #426bb3;
                         transition: 1s;
 
-                        &:hover{
+                        &:hover {
                             background-color: #213e6f;
                             color: var(--Cinza2);
                         }
                     }
 
-                    #whatsapp{
+                    #whatsapp {
                         background-color: #25d366;
                         transition: 1s;
 
-                        &:hover{
+                        &:hover {
                             background-color: #16843e;
                             color: var(--Cinza2);
                         }
                     }
 
-                    #discord{
+                    #discord {
                         background-color: #0056c7;
                         transition: 1s;
 
-                        &:hover{
+                        &:hover {
                             background-color: #213e6f;
                             color: var(--Cinza2);
                         }
@@ -354,21 +372,22 @@ ul {
             }
 
             /* LINKS IMPORTANTES*/
-            ul{
+            ul {
                 margin-top: 1rem;
                 display: flex;
                 flex-direction: column;
                 gap: 1.2rem;
-                li{
+
+                li {
                     list-style-type: none;
-                    
-                    a{
+
+                    a {
                         text-decoration: none;
                         color: var(--Branco);
                         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                         transition: 0.5s;
 
-                        &:hover{
+                        &:hover {
                             color: var(--Ciano);
                         }
                     }
@@ -376,18 +395,18 @@ ul {
             }
 
             /* NEWS LETTER*/
-            .news{
+            .news {
                 margin-top: 1rem;
                 background-color: var(--Branco);
                 width: 100%;
                 padding: 1.2rem;
-                border-radius: 10px;    
+                border-radius: 10px;
 
-                label{
+                label {
                     color: var(--SombraCinza);
                 }
 
-                input{
+                input {
                     padding: 0.2rem;
                     margin: 0.4rem 0;
                     width: 100%;
@@ -397,12 +416,12 @@ ul {
                     font-weight: 900;
                     transition: 1s;
 
-                    &:focus{
+                    &:focus {
                         color: var(--VermelhoBase);
                     }
                 }
 
-                button{
+                button {
                     width: 100%;
                     height: 1.8rem;
                     background-color: var(--VermelhoBase);
@@ -413,7 +432,7 @@ ul {
                     transition: 0.5s;
                     border-radius: 10px;
 
-                    &:hover{
+                    &:hover {
                         background-color: var(--ResaltoAmarelo);
                         color: var(--VermelhoBase);
                     }
@@ -423,25 +442,26 @@ ul {
     }
 }
 
-    /* DIREITOS RESERVADOS */
-.dir{
+/* DIREITOS RESERVADOS */
+.dir {
     text-align: center;
     color: var(--Branco);
     font-size: 0.7rem;
     height: 5rem;
     align-content: center;
     padding-bottom: 1.5rem;
-    
-    .dir-marca{
+
+    .dir-marca {
         padding-bottom: 0.5rem;
         font-family: 'Courier New', Courier, monospace;
         font-weight: 900;
         font-size: 0.8rem;
     }
 
-    .dir-reservados{
+    .dir-reservados {
         font-family: 'Courier New', Courier, monospace;
-        
+
     }
 }
+
 /* FIM DO RODAPE */
