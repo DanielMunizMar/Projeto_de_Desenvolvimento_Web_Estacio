@@ -9,6 +9,7 @@
 :root {
     --VermelhoBase: #b81515;
     --VermelhoClaro: #db6161;
+    --ResaltoAmarelo: #ffc83c;
     --Branco: #FFFFFF;
     --VermelhoEscuro: #630505;
     --Preto: #121212;
@@ -177,11 +178,9 @@ ul {
 
 /*FIM DO HEADER DO SITE*/
 
+/* Início da Estilização da página contato.html*/
 
-
-/* Estilização da página contato.html*/
-
-form {
+.form-cont {
     width: 100%;
     margin: 20px;
     margin-top: 2rem;
@@ -189,19 +188,9 @@ form {
     animation: fadein 1.5s ease-in-out;
 }
 
-@keyframes fadein {
-    from {
-        opacity: 0;
+/* Estilização do Formulário: */
 
-    }
-
-    to {
-        opacity: 1;
-
-    }
-}
-
-form input[type="text"] {
+.form-cont input[type="text"] {
     width: 100%;
     padding: 5px;
     font-size: 16px;
@@ -209,16 +198,13 @@ form input[type="text"] {
     border-bottom: 1px solid;
 }
 
-form input[type="text"]:focus {
+.form-cont input[type="text"]:focus {
     outline: none;
-    /* Remove o padrão do navegador */
     border-bottom: 2px solid var(--SombraCinza);
-    /*Muda a borda de baixo*/
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-    /* Adiciona uma sombra sutil*/
 }
 
-label {
+.lab-cont {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
@@ -250,19 +236,28 @@ textarea {
     }
 }
 
-form .animado {
+.form-cont .animado {
     width: 100%;
+    margin-top: 2rem;
     font-size: 16px;
 }
+
+/* Botão do formulário com animação: */
 
 .animado {
     padding: 10px;
     border: none;
     color: white;
-    background-color: #800c0c;
+    background-color: var(--VermelhoBase);
     border-radius: 5px;
     cursor: pointer;
     transition: transform 1s ease, background-color 0.3s ease;
+
+    &:hover {
+        background-color: var(--ResaltoAmarelo);
+        color: var(--VermelhoBase);
+        letter-spacing: 0.2rem;
+    }
 }
 
 .animado:hover {
@@ -273,26 +268,44 @@ form .animado {
     background-color: #000000;
 }
 
+/* Animação de entrada do Formulário: */
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Menu de seleção de setor do formulário: */
+
 .seletor {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    height: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 
     #setor {
-        border-radius: 2rem;
-        border: 3px solid #000000;
+        border: none;
+        border-bottom: 2px solid var(--SombraCinza);
         width: 80%;
-        transition: transform 0.2s ease ease-in-out;
+        transition: transform and 0.2s ease ease-in-out;
         outline: none;
+        padding: 0.2rem;
 
         &:active {
             transform: translateY(2px);
-
-
         }
     }
 
 }
+
+/* Estruturação e organização do layout da pagina contato: */
 
 #principal {
     margin-top: 2rem;
@@ -328,7 +341,6 @@ form .animado {
         padding-bottom: 0.7rem;
         color: var(--VermelhoBase);
         text-align: center;
-
     }
 
     ul {
@@ -339,7 +351,6 @@ form .animado {
         width: 80%;
 
         p {
-            font-weight: 300;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
     }
@@ -357,58 +368,248 @@ form .animado {
         margin-left: 5%;
 
         /*COISA NOVA*/
-        
-form {
-    width: 100%;
-    margin: 0;
-    margin-top: 2rem;
-    padding: 0;
-    padding-bottom: 2rem;
-    animation: fadein 1.5s ease-in-out;
-}
 
-}
-        /*COISA NOVA*/
-        
-        #formulario {
-            width: 90%;
-            margin-left: 5%;
-
-            div {
-                text-align: justify;
-                width: 90%;
-                margin-left: 5%;
-
-                p {
-                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                }
-            }
+        .form-cont {
+            width: 100%;
+            margin: 0;
+            margin-top: 2rem;
+            padding: 0;
+            padding-bottom: 2rem;
+            animation: fadein 1.5s ease-in-out;
         }
 
-        #info {
-            background-color: var(--Cinza2);
+    }
+
+    /*COISA NOVA*/
+
+    #formulario {
+        width: 90%;
+        margin-left: 5%;
+
+        div {
+            text-align: justify;
             width: 90%;
             margin-left: 5%;
-            padding: 1rem;
 
-            h2 {
-                padding-bottom: 0.7rem;
-                color: var(--VermelhoBase);
-                text-align: center;
+            p {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        }
+    }
 
+    #info {
+        background-color: var(--Cinza2);
+        width: 90%;
+        margin-left: 5%;
+        padding: 1rem;
+
+        h2 {
+            padding-bottom: 0.7rem;
+            color: var(--VermelhoBase);
+            text-align: center;
+
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            font-size: 1rem;
+            color: #464646;
+            width: 80%;
+
+            p {
+                font-weight: 300;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        }
+    }
+}
+
+/* INICIO DO RODAPE */
+.rodape {
+    background-color: var(--VermelhoBase);
+    width: 100%;
+    height: auto;
+
+    .rodape-space {
+        height: auto;
+        width: 70%;
+        margin-left: 15%;
+
+
+        .logo-rodape {
+            width: 7rem;
+            padding: 10px;
+        }
+
+        .rodape-containers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            display: flex;
+
+            .rodape-container {
+                color: white;
+                padding: 1.1rem;
+                display: block;
+
+                .container-titulo {
+                    font-size: 1.17rem;
+                    color: white;
+                }
+
+                /* REDES SOCIAIS*/
+                .redes {
+                    display: flex;
+                    gap: 0.5rem;
+                    padding-top: 1rem;
+
+                    .rede-social {
+                        height: 2.5rem;
+                        width: 2.5rem;
+                        color: var(--Branco);
+                        align-content: center;
+                        text-align: center;
+                        border-radius: 50%;
+
+                    }
+
+                    #instagram {
+                        background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+                        transition: 1s;
+
+                        &:hover {
+                            background: linear-gradient(#461577, #870e49, #995e0a);
+                            color: var(--Cinza2);
+                        }
+                    }
+
+                    #facebook {
+                        background-color: #426bb3;
+                        transition: 1s;
+
+                        &:hover {
+                            background-color: #213e6f;
+                            color: var(--Cinza2);
+                        }
+                    }
+
+                    #whatsapp {
+                        background-color: #25d366;
+                        transition: 1s;
+
+                        &:hover {
+                            background-color: #16843e;
+                            color: var(--Cinza2);
+                        }
+                    }
+
+                    #discord {
+                        background-color: #0056c7;
+                        transition: 1s;
+
+                        &:hover {
+                            background-color: #213e6f;
+                            color: var(--Cinza2);
+                        }
+                    }
+                }
             }
 
-            ul {
+            /* LINKS IMPORTANTES*/
+            .lista-links {
+                margin-top: 1rem;
                 display: flex;
                 flex-direction: column;
-                font-size: 1rem;
-                color: #464646;
-                width: 80%;
+                gap: 1.2rem;
 
-                p {
-                    font-weight: 300;
-                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                li {
+                    list-style-type: none;
+
+                    a {
+                        text-decoration: none;
+                        color: var(--Branco);
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        transition: 0.5s;
+
+                        &:hover {
+                            color: var(--Ciano);
+                        }
+                    }
+                }
+            }
+
+            /* NEWS LETTER*/
+            .news {
+                margin-top: 1rem;
+                background-color: var(--Branco);
+                width: 100%;
+                padding: 1.2rem;
+                border-radius: 10px;
+
+                .news-lab {
+                    color: var(--SombraCinza);
+                }
+
+                .news-input {
+                    padding: 0.2rem;
+                    margin: 0.4rem 0;
+                    width: 100%;
+                    border-radius: 10px;
+                    padding: 0.4rem;
+                    font-family: 'Courier New', Courier, monospace;
+                    font-weight: 900;
+
+                    &:focus {
+                        outline: none;
+                        background-color: var(--Cinza2);
+                        color: var(--VermelhoBase);
+                    }
+                }
+
+                .news-btn {
+                    width: 100%;
+                    height: 1.8rem;
+                    background-color: var(--VermelhoBase);
+                    border: none;
+                    color: var(--Branco);
+                    border: none;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    border-radius: 10px;
+
+                    &:hover {
+                        background-color: var(--ResaltoAmarelo);
+                        color: var(--VermelhoBase);
+                        letter-spacing: 0.2rem;
+                    }
+
                 }
             }
         }
     }
+}
+
+/* DIREITOS RESERVADOS */
+.dir {
+    text-align: center;
+    color: var(--Branco);
+    font-size: 0.7rem;
+    height: 5rem;
+    align-content: center;
+    padding-bottom: 1.5rem;
+
+    .dir-marca {
+        padding-bottom: 0.5rem;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 900;
+        font-size: 0.8rem;
+    }
+
+    .dir-reservados {
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+}
+
+/* FIM DO RODAPE */

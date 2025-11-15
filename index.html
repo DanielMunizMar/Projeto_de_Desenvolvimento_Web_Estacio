@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="src/css/style.css">
     <script src="src/js/inicio.js" defer></script>
 </head>
+
 <body>
 
     <!-- INICIO DO CABEÇALHO!!! -->
@@ -26,7 +28,7 @@
                     </ul>
                 </div>
                 <div class="entrar-btn">
-                    <button><a href="#">Entrar</a></button>
+                    <button><a href="src/pages/login.html">Entrar</a></button>
                 </div>
                 <div class="mobile-btn">
                     <button onclick="menuShow()"><img class="icon" src="src/images/icons/aberto.svg" alt=""></button>
@@ -54,7 +56,7 @@
     <footer class="rodape">
         <div class="rodape-space">
             <img class="logo-rodape" src="src/images/ELITE.png" alt="">
-            
+
             <div class="rodape-containers">
                 <div class="rodape-container">
                     <h3 class="container-titulo">Siga-nos</h3>
@@ -71,41 +73,42 @@
                         <a href="#" class="rede-social" id="discord">
                             <i class="fa-brands fa-discord"></i>
                         </a>
-                    </div>  
+                    </div>
                 </div>
 
                 <div class="rodape-container">
                     <h3 class="container-titulo">Links Importantes</h3>
                     <ul class="lista-links">
                         <li><a href="">Política de privacidade</a></li>
-                        <li><a href="">Política de troca e devoluções</a></li>
+                        <li><a href="">Política de reembolso</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="rodape-container">
                     <h3 class="container-titulo">Participe do nosso News Letter</h3>
                     <div class="news">
-                        <form action="https://formsubmit.co/your@email.com" method="POST">
-                            <label for="">Nome</label>
-                            <input type="text" name="nome" required><br>
-                            <label for="">Email</label>
-                            <input type="email" name="email" required><br>
-                            <button type="submit">ENVIAR</button>
+                        <form class="newsletter" action="" method="POST">
+                            <label class="news-lab" for="">Nome</label>
+                            <input class="news-input" type="text" name="nome" required><br>
+                            <label class="news-lab" for="">Email</label>
+                            <input class="news-input" type="email" name="email" required><br>
+                            <button class="news-btn" type="submit" value="Subscribe">ENVIAR</button>
                         </form>
                     </div>
                 </div>
-                
+
             </div>
         </div>
 
         <!-- DIREITOS RESERVADOS -->
         <div class="dir">
-                <p class="dir-marca">© 2025 Editora Elite Ltda.</p>
-                <p class="dir-reservados">Todos os direitos reservados.</p> 
-            </div>
+            <p class="dir-marca">© 2025 Editora Elite Ltda.</p>
+            <p class="dir-reservados">Todos os direitos reservados.</p>
+        </div>
 
     </footer>
     <!-- FIM DO RODAPE -->
 
 </body>
+
 </html>

@@ -123,10 +123,10 @@
     <footer class="rodape">
         <div class="rodape-space">
             <img class="logo-rodape" src="src/images/ELITE.png" alt="">
-
+            
             <div class="rodape-containers">
                 <div class="rodape-container">
-                    <h3>Siga-nos</h3>
+                    <h3 class="container-titulo">Siga-nos</h3>
                     <div class="redes">
                         <a href="#" class="rede-social" id="instagram">
                             <i class="fa-brands fa-instagram"></i>
@@ -140,36 +140,38 @@
                         <a href="#" class="rede-social" id="discord">
                             <i class="fa-brands fa-discord"></i>
                         </a>
-                    </div>
+                    </div>  
                 </div>
 
                 <div class="rodape-container">
-                    <h3>Links Importantes</h3>
-                    <ul>
+                    <h3 class="container-titulo">Links Importantes</h3>
+                    <ul class="lista-links">
                         <li><a href="">Política de privacidade</a></li>
-                        <li><a href="">Política de troca e devoluções</a></li>
+                        <li><a href="">Política de reembolso</a></li>
                     </ul>
                 </div>
-
+                
                 <div class="rodape-container">
-                    <h3>Participe do nosso News Letter</h3>
+                    <h3 class="container-titulo">Participe do nosso News Letter</h3>
                     <div class="news">
-                        <label for="">Nome</label>
-                        <input type="text"><br>
-                        <label for="">Email</label>
-                        <input type="text"><br>
-                        <button>ENVIAR</button>
+                        <form action="" method="POST">
+                            <label for="">Nome</label>
+                            <input type="text" name="nome" required><br>
+                            <label for="">Email</label>
+                            <input type="email" name="email" required><br>
+                            <button type="submit" value="Subscribe">ENVIAR</button>
+                        </form>
                     </div>
                 </div>
-
+                
             </div>
         </div>
 
         <!-- DIREITOS RESERVADOS -->
         <div class="dir">
-            <p class="dir-marca">© 2025 Editora Elite Ltda.</p>
-            <p class="dir-reservados">Todos os direitos reservados.</p>
-        </div>
+                <p class="dir-marca">© 2025 Editora Elite Ltda.</p>
+                <p class="dir-reservados">Todos os direitos reservados.</p> 
+            </div>
 
     </footer>
     <!-- FIM DO RODAPE -->
