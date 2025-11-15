@@ -222,8 +222,10 @@ h1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 15px;
   animation: fadein 2s ease-in-out;
   margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 @keyframes fadein {
