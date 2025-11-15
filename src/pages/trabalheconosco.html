@@ -45,10 +45,12 @@
      
     <section>
       <h1>TRABALHE CONOSCO</h1>
+      <!-- Campo de pesquisa com botão -->
       <div class="container-pesquisa">
         <input type="text" id="pesquisa" placeholder="Buscar vagas" />
         <button id="btnPesquisa">Pesquisar</button>
       </div>
+      <!-- Contêineres das vagas -->
       <div class="vagas-cards">
         <div class="vaga-descricao">
           <img
@@ -73,7 +75,7 @@
             alt="Imagem da vaga de Editor de Texto"
           />
           <h4>Editor(a) de Texto</h4>
-          <button onclick="mostrarDetalhesDaVaga()" type="button" class="btn-descricao" data-vaga="editor">Ver descrição</button>
+          <button onclick="mostrarDetalhesDaVaga()" type="button" class="btn-descricao" data-vaga="editordetexto">Ver descrição</button>
         </div>
         <div class="vaga-descricao">
           <img
@@ -100,6 +102,7 @@
           <button onclick="mostrarDetalhesDaVaga()" type="button" class="btn-descricao" data-vaga="ilustrador">Ver descrição</button>
         </div>
       </div>
+      <!-- Bloco onde vai aparecer os detalhes da vaga ao clicar no botão "Ver descrição"-->
       <div id="containerVaga">
         <span class="btn-fechar-vaga" id="btnFechar">X</span>
         <div id="detalhesDaVaga"></div>
