@@ -91,3 +91,18 @@ function menuShow() {
   }
 }
 //FIM DA RESPONSIVIDADE DO HEADER
+
+function showDesc(devdesc) {
+  const target = document.getElementById(devdesc);
+  if (!target) return;
+
+  const isVisible = target.style.display === 'block';
+
+  document.querySelectorAll('.devdesc').forEach(div => {
+    div.style.display = 'none';
+  });
+
+  if (!isVisible) {
+    target.style.display = 'block';
+  }
+}
