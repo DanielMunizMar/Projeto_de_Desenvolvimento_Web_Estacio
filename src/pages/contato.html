@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editora Elite - Contatos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="../css/contato.css">
     <script src="../js/index.js" defer></script>
 </head>
@@ -45,6 +46,7 @@
     </header>
     <!-- FINAL DO CABEÇALHO!!! -->
 
+    <!-- CORPO DA PÁGINA -->
     <div id="principal">
         <div id="formulario">
             <div>
@@ -52,15 +54,15 @@
                     contato conosco no formulário abaixo. </p> <br>
                 <p>A Elite agradece o seu contato!</p>
             </div>
-            <form action="contato.html" method="post">
+            <form class="form-cont" action="contato.html" method="post">
                 <label for="Nome">Nome:</label>
                 <input type="text" id="Nome" name="Nome" required>
-                <label for="Email">Email:</label>
+                <label class="lab-cont" for="Email">Email:</label>
                 <input type="text" name="Email" id="Email" required>
-                <label for="Mensagem"></label>
+                <label class="lab-cont" for="Mensagem"></label>
                 <textarea name="Mensagem" id="Mensagem" maxlength="300" placeholder="Escreva sua mensagem"></textarea>
                 <div class="seletor">
-                    <label for="setor"> Selecione o setor: </label>
+                    <label class="lab-cont" for="setor"> Selecione o setor: </label>
                     <select name="setor" id="setor">
                         <option value="SAC">SAC</option>
                         <option value="Comercial">Comercial</option>
@@ -96,6 +98,67 @@
             </ul>
         </div>
     </div>
+    <br>
+
+    <!-- INICIO DO RODAPE -->
+    <footer class="rodape">
+        <div class="rodape-space">
+            <img class="logo-rodape" src="src/images/ELITE.png" alt="">
+
+            <div class="rodape-containers">
+                <div class="rodape-container">
+                    <h3 class="container-titulo">Siga-nos</h3>
+                    <div class="redes">
+                        <a href="#" class="rede-social" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="rede-social" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="rede-social" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="rede-social" id="discord">
+                            <i class="fa-brands fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="rodape-container">
+                    <h3 class="container-titulo">Links Importantes</h3>
+                    <ul class="lista-links">
+                        <li><a href="">Política de privacidade</a></li>
+                        <li><a href="">Política de reembolso</a></li>
+                    </ul>
+                </div>
+
+                <div class="rodape-container">
+                    <h3 class="container-titulo">Participe do nosso News Letter</h3>
+                    <div class="news">
+                        <form class="newsletter" action="" method="POST">
+                            <label class="news-lab" for="">Nome</label>
+                            <input class="news-input" type="text" name="nome" required><br>
+                            <label class="news-lab" for="">Email</label>
+                            <input class="news-input" type="email" name="email" required><br>
+                            <button class="news-btn" type="submit" value="Subscribe">ENVIAR</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- DIREITOS RESERVADOS -->
+        <div class="dir">
+            <p class="dir-marca">© 2025 Editora Elite Ltda.</p>
+            <p class="dir-reservados">Todos os direitos reservados.</p>
+        </div>
+
+    </footer>
+    <!-- FIM DO RODAPE -->
+
+
+
 </body>
 
 </html>
