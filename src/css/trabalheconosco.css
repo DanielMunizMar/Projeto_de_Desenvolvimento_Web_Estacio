@@ -289,7 +289,7 @@ h1 {
   display: none;
   position: absolute;
   margin: auto;
-  font-size: 22px;
+  font-size: 20px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -526,7 +526,7 @@ h1 {
   }
 
   #containerVaga {
-    width: 60%;
+    width: 65%;
     height: 24%;
     font-size: 12px;
   }
