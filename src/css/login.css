@@ -40,7 +40,7 @@ body {
     background-color: var(--VermelhoBase);
     top: 2rem;
     height: 3rem;
-    width: 10rem;
+    width: 10rem;   
     left: 0;
     transform: translateX(-50%);
     display: flex;

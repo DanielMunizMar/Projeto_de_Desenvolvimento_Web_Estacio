@@ -77,10 +77,10 @@ header{
     }
 
     &:hover{
-        background-color: var(--SombraCinza);
+        background-color: var(--ResaltoAmarelo);
 
         a{
-            color: var(--Branco);
+            color: var(--Preto);
         }
     }
     }
