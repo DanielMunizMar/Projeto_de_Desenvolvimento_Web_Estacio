@@ -21,3 +21,11 @@ function showDesc1(){
         devInfo1.classList.add('abrir');
     }
 }
+
+
+
+// FUNÇÃO PARA LINKAR A PÁGINA LOGIN COM INICIO
+function sair() {
+  window.location.href = "../../index.html";
+}
+document.getElementById('saida').addEventListener("click", sair);
