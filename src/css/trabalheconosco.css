@@ -320,7 +320,7 @@ h1 {
 }
 
 #detalhesDaVaga {
-  padding: 20px;
+  padding: 18px;
   border-radius: 8px;
   max-width: 600px;
   margin: 35px 25px;
@@ -340,6 +340,21 @@ h1 {
 
 .btn-candidatar:hover {
   background-color: #c26106;
+}
+
+@media screen and (max-width: 1250px) {
+  #containerVaga {
+    width: 42%;
+    height: 42%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #containerVaga {
+    width: 45%;
+    height: 42%;
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 880px) {
@@ -377,7 +392,7 @@ h1 {
   }
 
   #detalhesDaVaga {
-    padding: 18px;
+    padding: 15px;
   }
 }
 
@@ -433,7 +448,7 @@ h1 {
   }
 
   #containerVaga {
-    width: 47%;
+    width: 50%;
     height: 35%;
     font-size: 15px;
   }
@@ -443,7 +458,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 630px) {
   h1 {
     font-size: 28px;
   }
@@ -481,6 +496,18 @@ h1 {
       padding: 7px 10px;
       font-size: 12.2px;
     }
+  }
+
+  #containerVaga {
+    width: 55%;
+    height: 37%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  #containerVaga {
+    width: 68%;
+    height: 33%;
   }
 }
 
