@@ -150,11 +150,17 @@ header {
     grid-template-columns: auto auto auto auto;
     width: 90%;
     margin-left: 5%;
+    gap: 1rem 2rem;
 
-    @media screen and (max-width: 870px) {
-        grid-template-columns: auto auto;
 
-        @media screen and (max-width: 440px) {
+    @media screen and (max-width: 1560px) {
+        grid-template-columns: auto auto auto;
+        
+    }
+    @media screen and (max-width: 1225px) {
+        grid-template-columns: auto auto ;
+
+        @media screen and (max-width: 810px) {
             grid-template-columns: auto;
         }
     }
@@ -163,7 +169,7 @@ header {
 
         margin: 1rem;
         padding: 1rem;
-        height: 15rem;
+        height: 33rem;
         border-radius: 20px;
         box-shadow: 0 3px 10px var(--SombraCinza);
         display: flex;
@@ -171,7 +177,10 @@ header {
         text-align: center;
         justify-content: space-between;
 
-        .foto-livro {}
+        .foto-livro{
+            height: 80%;
+            border-radius: 20px;
+        }
 
         .nome-livro {
             color: var(--SombraCinza);
@@ -184,7 +193,7 @@ header {
         .btn-livro {
             width: 100%;
             border: none;
-            height: 1.5rem;
+            height: 3rem;
             border-radius: 40px;
             cursor: pointer;
             background-color: var(--VermelhoBase);
@@ -232,6 +241,28 @@ header {
 }
 
 
+
+/* CLASSE DE SUMIR */
+.livro.hide{
+    display: none;
+}
+
+/* CLASSE DE APARECER */
+.livro.show{
+    display: block;
+    animation: show 0.5s ease;
+}
+
+@keyframes show{
+    0%{
+        opacity: 0;
+        transform: scale(0.9);
+    } 100%{
+        opacity: 1;
+        transform: scale(1);
+        
+    }
+}
 
 
 

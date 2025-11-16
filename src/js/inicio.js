@@ -25,7 +25,7 @@ function showDesc1(){
 
 
 // FUNÇÃO PARA LINKAR A PÁGINA LOGIN COM INICIO
-function sair() {
+function saidaPage() {
   window.location.href = "../../index.html";
 }
-document.getElementById('saida').addEventListener("click", sair);
+document.getElementById('saida').addEventListener('click', saidaPage);
