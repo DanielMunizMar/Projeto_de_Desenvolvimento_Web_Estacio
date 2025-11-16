@@ -221,7 +221,7 @@ h1 {
   color: #000000;
 }
 
-/* CONTAINER DE VAGAS */
+/* GRUPAMENTO DAS VAGAS */
 .vagas-cards {
   display: flex;
   justify-content: center;
@@ -348,6 +348,7 @@ h1 {
   background-color: #c26106;
 }
 
+/* RESPONSIVIDADE DA PÁGINA DE VAGAS */
 @media screen and (max-width: 1250px) {
   #containerVaga {
     width: 42%;
@@ -402,7 +403,6 @@ h1 {
   }
 }
 
-/* RESPONSIVIDADE DO PAINEL DE VAGAS */
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 28px;
@@ -579,6 +579,74 @@ h1 {
     padding: 6px 10px;
     font-size: 14px;
     margin-top: 8px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .container-pesquisa {
+    margin: 15px;
+
+    & input {
+      width: 50%;
+      padding: 4px 7px;
+      font-size: 10px;
+    }
+
+    & button {
+      padding: 4px 7px;
+      font-size: 10px;
+    }
+  }
+
+  .vagas-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vaga-descricao {
+    width: 45%;
+    height: 78%;
+
+    & img {
+      width: 100%;
+    }
+
+    & h4 {
+      font-size: 10px;
+    }
+
+    & button {
+      width: 6rem;
+      padding: 4px 7px;
+      font-size: 9px;
+    }
+  }
+
+  #containerVaga {
+    width: 65%;
+    height: 18%;
+    font-size: 10px;
+  }
+
+  .btn-fechar-vaga {
+    font-size: 15px;
+  }
+
+  #detalhesDaVaga {
+    padding: 5px;
+    width: 80%;
+    margin: 18px 15px;
+  }
+
+  .btn-candidatar {
+    padding: 4px 8px;
+    font-size: 12px;
+    margin-top: 6px;
   }
 }
 
