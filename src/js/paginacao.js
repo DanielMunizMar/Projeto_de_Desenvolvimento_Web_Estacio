@@ -3,7 +3,7 @@ const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 const pageNumber = document.getElementById("page-number")
 
-const maxItem = 12; // ESSA PARTE INDICA QUANTOS ITENS VÃO APARECER POR VEZ NA TELA
+const maxItem = 8; // ESSA PARTE INDICA QUANTOS ITENS VÃO APARECER POR VEZ NA TELA
 let index = 1; // PÁGINA ATUAL
 
 const totalPages = Math.ceil(list.length / maxItem);

@@ -144,6 +144,17 @@ header {
 }
 
 
+.texto-principal{
+    text-align: center;
+    margin: 2rem;
+
+    h2{
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--VermelhoBase);
+        font-size: 5rem;
+    }
+}
+
 
 .list {
     display: grid;
