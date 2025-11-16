@@ -42,7 +42,7 @@ prev.addEventListener("click", () => {
     }
 });
 
-// Iniciar
+// EXECUTA A FUNÇÃO SHOWITEMS() 
 window.onload = () => {
     showItems();
 };
