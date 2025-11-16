@@ -345,6 +345,7 @@ textarea {
         padding-bottom: 0.7rem;
         color: var(--VermelhoBase);
         text-align: center;
+        padding-top: 2rem;
     }
 
     ul {
