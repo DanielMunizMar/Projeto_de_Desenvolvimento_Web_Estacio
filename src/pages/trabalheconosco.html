@@ -1,112 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Editora Elite - Trabalhe Conosco</title>
-    <link rel="stylesheet" type="text/css" href="../css/trabalheconosco.css" />
-    <script src="../js/index.js" defer></script>
-  </head>
-  <body>
-    
-<!-- INICIO DO CABEÇALHO!!! -->
-    <header class="cabecalho-back">
-        <nav class="nav-bar">
-            <div class="logo-icon">
-                <img id="logo" src="../images/ELITE.png" alt="">
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a class="nav-link" href="../../index.html">INÍCIO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aelite.html">A ELITE</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contato.html">CONTATOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="trabalheconosco.html">TRABALHE CONOSCO</a></li>
-                </ul>         
-            </div>
-            <div class="nav-button">
-                <button class="login-button"><a href="#">Entrar</a></button>
-            </div>
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="../images/icons/aberto.svg" alt=""></button>
-            </div>
-        </nav>
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a class="nav-link" href="../../index.html">INÍCIO</a></li>
-                <li class="nav-item"><a class="nav-link" href="aelite.html">A ELITE</a></li>
-                <li class="nav-item"><a class="nav-link" href="contato.html">CONTATOS</a></li>
-                <li class="nav-item"><a class="nav-link" href="trabalheconosco.html">TRABALHE CONOSCO</a></li>
-            </ul>
-            <div class="login-button-2">
-                <button><a href="#">Entrar</a></button>
-            </div>
-    </header>
-    <!-- FINAL DO CABEÇALHO!!! -->
-     
-    <section>
-      <h1>TRABALHE CONOSCO</h1>
-      <!-- Campo de pesquisa com botão de busca -->
-      <div class="container-pesquisa">
-        <input type="text" id="pesquisa" placeholder="Buscar vagas" />
-        <button id="btnPesquisa">Pesquisar</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editora Elite - Trabalhe Conosco</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/trabalheconosco.css" />
+  <script src="../js/index.js" defer></script>
+</head>
+
+<body>
+
+  <!-- INICIO DO CABEÇALHO!!! -->
+  <header class="cabecalho-back">
+    <nav class="nav-bar">
+      <div class="logo-icon">
+        <img id="logo" src="../images/ELITE.png" alt="">
       </div>
-      <!-- Área das vagas -->
-      <div class="vagas-cards">
-        <div class="vaga-descricao">
-          <img
-            src="../images/devbackend.jpg"
-            alt="Imagem da vaga de Desenvolvedor Back-End"
-          />
-          <h4>Desenvolvedor Back-End</h4>
-          <button onclick="mostrarDetalhesDaVaga()" type="button" class="btn-descricao" data-vaga="devbackend">Ver descrição</button>
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a class="nav-link" href="../../index.html">INÍCIO</a></li>
+          <li class="nav-item"><a class="nav-link" href="aelite.html">A ELITE</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">CONTATOS</a></li>
+          <li class="nav-item"><a class="nav-link" href="trabalheconosco.html">TRABALHE CONOSCO</a></li>
+        </ul>
+      </div>
+      <div class="nav-button">
+        <button class="login-button"><a href="../pages/login.html">Entrar</a></button>
+      </div>
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="../images/icons/aberto.svg" alt=""></button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a class="nav-link" href="../../index.html">INÍCIO</a></li>
+        <li class="nav-item"><a class="nav-link" href="aelite.html">A ELITE</a></li>
+        <li class="nav-item"><a class="nav-link" href="contato.html">CONTATOS</a></li>
+        <li class="nav-item"><a class="nav-link" href="trabalheconosco.html">TRABALHE CONOSCO</a></li>
+      </ul>
+      <div class="login-button-2">
+        <button><a href="../pages/login.html">Entrar</a></button>
+      </div>
+  </header>
+  <!-- FINAL DO CABEÇALHO!!! -->
+
+  <section>
+    <h1>TRABALHE CONOSCO</h1>
+    <!-- Campo de pesquisa com botão de busca -->
+    <div class="container-pesquisa">
+      <input type="text" id="pesquisa" placeholder="Buscar vagas" />
+      <button id="btnPesquisa">Pesquisar</button>
+    </div>
+    <!-- Área das vagas -->
+    <div class="vagas-cards">
+      <div class="vaga-descricao">
+        <img src="../images/devbackend.jpg" alt="Imagem da vaga de Desenvolvedor Back-End" />
+        <h4>Desenvolvedor Back-End</h4>
+        <button onclick="mostrarDetalhesDaVaga()" type="button" class="btn-descricao" data-vaga="devbackend">Ver
+          descrição</button>
+      </div>
+
+      <div class="vaga-descricao">
+        <img src="../images/atendentedesac.jpg" alt="Imagem da vaga de Atendente SAC" />
+        <h4>Atendente SAC</h4>
+        <button onclick="mostrarDetalhesDaVaga()" type="button" class="btn-descricao" data-vaga="atendentesac">Ver
+          descrição</button>
+      </div>
+      <div class="vaga-descricao">
+        <img src="../images/editordetexto.jpg" alt="Imagem da vaga de Editor de Texto" />
+        <h4>Editor(a) de Texto</h4>
+        <button onclick="mostrarDetalhesDaVaga()" type="button" class="btn-descricao" data-vaga="editordetexto">Ver
+          descrição</button>
+      </div>
+      <div class="vaga-descricao">
+        <img src="../images/especialistaebooks.jpg" alt="Imagem da vaga de Especialista em E-books" />
+        <h4>Especialista em E-books</h4>
+        <button onclick="mostrarDetalhesDaVaga()" type="button" class="btn-descricao"
+          data-vaga="especialistadedados">Ver descrição</button>
+      </div>
+      <div class="vaga-descricao">
+        <img src="../images/gerentedeprojetos.png" alt="Imagem da vaga de Gerente de Projetos" />
+        <h4>Gerente de Projetos</h4>
+        <button onclick="mostrarDetalhesDaVaga()" type="button" class="btn-descricao" data-vaga="gerenteprojetos">Ver
+          descrição</button>
+      </div>
+      <div class="vaga-descricao">
+        <img src="../images/ilustrador.jpeg" alt="Imagem da vaga de Ilustrador" />
+        <h4>Ilustrador(a)</h4>
+        <button onclick="mostrarDetalhesDaVaga()" type="button" class="btn-descricao" data-vaga="ilustrador">Ver
+          descrição</button>
+      </div>
+    </div>
+    <!-- Bloco de detalhes da vaga que aparecerá caso clique no botão "Ver descrição"-->
+    <div id="containerVaga">
+      <span class="btn-fechar-vaga" id="btnFechar">X</span>
+      <div id="detalhesDaVaga"></div>
+    </div>
+  </section>
+
+
+  <!-- INICIO DO RODAPE -->
+  <footer class="rodape">
+    <div class="rodape-space">
+      <img class="logo-rodape" src="src/images/ELITE.png" alt="">
+
+      <div class="rodape-containers">
+        <div class="rodape-container">
+          <h3 class="container-titulo">Siga-nos</h3>
+          <div class="redes">
+            <a href="#" class="rede-social" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="rede-social" id="facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="rede-social" id="whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#" class="rede-social" id="discord">
+              <i class="fa-brands fa-discord"></i>
+            </a>
+          </div>
         </div>
 
-        <div class="vaga-descricao">
-          <img
-            src="../images/atendentedesac.jpg"
-            alt="Imagem da vaga de Atendente SAC"
-          />
-          <h4>Atendente SAC</h4>
-          <button onclick="mostrarDetalhesDaVaga()" type="button" class="btn-descricao" data-vaga="atendentesac">Ver descrição</button>
+        <div class="rodape-container">
+          <h3 class="container-titulo">Links Importantes</h3>
+          <ul class="lista-links">
+            <li><a href="">Política de privacidade</a></li>
+            <li><a href="">Política de reembolso</a></li>
+          </ul>
         </div>
-        <div class="vaga-descricao">
-          <img
-            src="../images/editordetexto.jpg"
-            alt="Imagem da vaga de Editor de Texto"
-          />
-          <h4>Editor(a) de Texto</h4>
-          <button onclick="mostrarDetalhesDaVaga()" type="button" class="btn-descricao" data-vaga="editordetexto">Ver descrição</button>
+
+        <div class="rodape-container">
+          <h3 class="container-titulo">Participe do nosso News Letter</h3>
+          <div class="news">
+            <form class="newsletter" action="" method="POST">
+              <label class="news-lab" for="">Nome</label>
+              <input class="news-input" type="text" name="nome" required><br>
+              <label class="news-lab" for="">Email</label>
+              <input class="news-input" type="email" name="email" required><br>
+              <button class="news-btn" type="submit" value="Subscribe">ENVIAR</button>
+            </form>
+          </div>
         </div>
-        <div class="vaga-descricao">
-          <img
-            src="../images/especialistaebooks.jpg"
-            alt="Imagem da vaga de Especialista em E-books"
-          />
-          <h4>Especialista em E-books</h4>
-          <button onclick="mostrarDetalhesDaVaga()" type="button" class="btn-descricao" data-vaga="especialistadedados">Ver descrição</button>
-        </div>
-        <div class="vaga-descricao">
-          <img
-            src="../images/gerentedeprojetos.png"
-            alt="Imagem da vaga de Gerente de Projetos"
-          />
-          <h4>Gerente de Projetos</h4>
-          <button onclick="mostrarDetalhesDaVaga()" type="button" class="btn-descricao" data-vaga="gerenteprojetos">Ver descrição</button>
-        </div>
-        <div class="vaga-descricao">
-          <img
-            src="../images/ilustrador.jpeg"
-            alt="Imagem da vaga de Ilustrador"
-          />
-          <h4>Ilustrador(a)</h4>
-          <button onclick="mostrarDetalhesDaVaga()" type="button" class="btn-descricao" data-vaga="ilustrador">Ver descrição</button>
-        </div>
+
       </div>
-      <!-- Bloco de detalhes da vaga que aparecerá caso clique no botão "Ver descrição"-->
-      <div id="containerVaga">
-        <span class="btn-fechar-vaga" id="btnFechar">X</span>
-        <div id="detalhesDaVaga"></div>
-      </div>
-    </section>
-  </body>
+    </div>
+
+    <!-- DIREITOS RESERVADOS -->
+    <div class="dir">
+      <p class="dir-marca">© 2025 Editora Elite Ltda.</p>
+      <p class="dir-reservados">Todos os direitos reservados.</p>
+    </div>
+
+  </footer>
+  <!-- FIM DO RODAPE -->
+</body>
+
 </html>
