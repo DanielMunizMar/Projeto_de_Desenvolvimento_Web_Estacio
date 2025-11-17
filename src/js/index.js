@@ -54,11 +54,9 @@ function mostrarDetalhesDaVaga(vagaId) {
   if (vaga) {
     containerVaga.style.display = "flex";
     detalheVaga.innerHTML = `
-  <div class="space-center">
     <h2>${vaga.nome}</h2><br>
     <p>${vaga.descricao}</p>
     <button class="btn-candidatar">Candidatar-se</button>
-  </div>
     `;
   } else {
     detalheVaga.innerHTML = "<p>Vaga não encontrada.</p>";
@@ -96,13 +94,13 @@ function showDesc(devdesc) {
   const target = document.getElementById(devdesc);
   if (!target) return;
 
-  const isVisible = target.style.display === 'block';
+  const isVisible = target.style.display === "block";
 
-  document.querySelectorAll('.devdesc').forEach(div => {
-    div.style.display = 'none';
+  document.querySelectorAll(".devdesc").forEach((div) => {
+    div.style.display = "none";
   });
 
   if (!isVisible) {
-    target.style.display = 'block';
+    target.style.display = "block";
   }
 }
